@@ -1,0 +1,12 @@
+{
+  "description": "Cross-family same-dimension Union tests. All pairs use reasoning prompt type, independent eps_pred.",
+  "pairs": [
+    {"label": "Qwen2.5-3B-base vs Qwen3.5-2B-base (2048dim)", "a": "activations_v3/Qwen2.5-3B-base_L18_reasoning.npy", "b": "activations_v3/Qwen3.5-2B-base_L14_reasoning.npy"},
+    {"label": "Qwen2.5-3B-base vs Qwen3-1.7B-base (2048dim)", "a": "activations_v3/Qwen2.5-3B-base_L18_reasoning.npy", "b": "activations_v3/Qwen3-1.7B-base_L14_reasoning.npy"},
+    {"label": "Qwen2.5-3B-base vs SmolLM2-1.7B-base (2048dim)", "a": "activations_v3/Qwen2.5-3B-base_L18_reasoning.npy", "b": "activations_v3/SmolLM2-1.7B-base_L12_reasoning.npy"},
+    {"label": "Qwen3.5-2B-base vs Qwen3-1.7B-base (2048dim)", "a": "activations_v3/Qwen3.5-2B-base_L14_reasoning.npy", "b": "activations_v3/Qwen3-1.7B-base_L14_reasoning.npy"},
+    {"label": "Qwen3.5-2B-base vs SmolLM2-1.7B-base (2048dim)", "a": "activations_v3/Qwen3.5-2B-base_L14_reasoning.npy", "b": "activations_v3/SmolLM2-1.7B-base_L12_reasoning.npy"},
+    {"label": "Qwen3-1.7B-base vs SmolLM2-1.7B-base (2048dim)", "a": "activations_v3/Qwen3-1.7B-base_L14_reasoning.npy", "b": "activations_v3/SmolLM2-1.7B-base_L12_reasoning.npy"},
+    {"label": "Qwen3-8B-base vs Qwen3.5-9B-base (4096dim)", "a": "activations_v3/Qwen3-8B-base_L18_reasoning.npy", "b": "activations_v3/Qwen3.5-9B-base_L20_reasoning.npy"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Base_Inst_R": {
+    "desc": "base vs instruct",
+    "type": "model_pair",
+    "prompt": "reasoning",
+    "families": [
+      "Qwen3.5",
+      "Qwen3",
+      "Qwen2.5",
+      "SmolLM2",
+      "Gemma4"
+    ]
+  }
+}

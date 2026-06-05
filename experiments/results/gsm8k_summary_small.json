@@ -1,0 +1,38 @@
+{
+  "Qwen3.5-0.8B-base": {
+    "error": "no output file found"
+  },
+  "Qwen3.5-0.8B-Inst": {
+    "error": "Command '['/home/linxuhao/pred1-env/bin/python3', '-m', 'lm_eval', '--model', 'hf', '--model_args', 'pretrained=Qwen/Qwen3.5-0.8B,attn_implementation=eager,dtype=float16', '--tasks', 'gsm8k', '--num_fewshot', '8', '--batch_size', 'auto', '--output_path', '/home/linxuhao/papers/mathematical-life/experiments/results/gsm8k', '--log_samples']' timed out after 3599.999989409931 seconds"
+  },
+  "Qwen3.5-2B-base": {
+    "error": "Command '['/home/linxuhao/pred1-env/bin/python3', '-m', 'lm_eval', '--model', 'hf', '--model_args', 'pretrained=Qwen/Qwen3.5-2B-Base,attn_implementation=eager,dtype=float16', '--tasks', 'gsm8k', '--num_fewshot', '8', '--batch_size', 'auto', '--output_path', '/home/linxuhao/papers/mathematical-life/experiments/results/gsm8k', '--log_samples']' timed out after 3599.999994119862 seconds"
+  },
+  "Qwen3.5-2B-Inst": {
+    "error": "Command '['/home/linxuhao/pred1-env/bin/python3', '-m', 'lm_eval', '--model', 'hf', '--model_args', 'pretrained=Qwen/Qwen3.5-2B,attn_implementation=eager,dtype=float16', '--tasks', 'gsm8k', '--num_fewshot', '8', '--batch_size', 'auto', '--output_path', '/home/linxuhao/papers/mathematical-life/experiments/results/gsm8k', '--log_samples']' died with <Signals.SIGABRT: 6>."
+  },
+  "Qwen2.5-0.5B-base": {
+    "error": "Command '['/home/linxuhao/pred1-env/bin/python3', '-m', 'lm_eval', '--model', 'hf', '--model_args', 'pretrained=Qwen/Qwen2.5-0.5B,attn_implementation=eager,dtype=float16', '--tasks', 'gsm8k', '--num_fewshot', '8', '--batch_size', 'auto', '--output_path', '/home/linxuhao/papers/mathematical-life/experiments/results/gsm8k', '--log_samples']' timed out after 3599.9999930700287 seconds"
+  },
+  "Qwen2.5-0.5B-Inst": {
+    "error": "no output file found"
+  },
+  "Qwen3-0.6B-base": {
+    "error": "no output file found"
+  },
+  "Qwen3-0.6B-Inst": {
+    "error": "no output file found"
+  },
+  "Qwen3-1.7B-base": {
+    "error": "Command '['/home/linxuhao/pred1-env/bin/python3', '-m', 'lm_eval', '--model', 'hf', '--model_args', 'pretrained=Qwen/Qwen3-1.7B-Base,attn_implementation=eager,dtype=float16', '--tasks', 'gsm8k', '--num_fewshot', '8', '--batch_size', 'auto', '--output_path', '/home/linxuhao/papers/mathematical-life/experiments/results/gsm8k', '--log_samples']' timed out after 3599.9999933699146 seconds"
+  },
+  "Qwen3-1.7B-Inst": {
+    "error": "Command '['/home/linxuhao/pred1-env/bin/python3', '-m', 'lm_eval', '--model', 'hf', '--model_args', 'pretrained=Qwen/Qwen3-1.7B,attn_implementation=eager,dtype=float16', '--tasks', 'gsm8k', '--num_fewshot', '8', '--batch_size', 'auto', '--output_path', '/home/linxuhao/papers/mathematical-life/experiments/results/gsm8k', '--log_samples']' died with <Signals.SIGABRT: 6>."
+  },
+  "SmolLM2-1.7B-base": {
+    "error": "Command '['/home/linxuhao/pred1-env/bin/python3', '-m', 'lm_eval', '--model', 'hf', '--model_args', 'pretrained=HuggingFaceTB/SmolLM2-1.7B,attn_implementation=eager,dtype=float16', '--tasks', 'gsm8k', '--num_fewshot', '8', '--batch_size', 'auto', '--output_path', '/home/linxuhao/papers/mathematical-life/experiments/results/gsm8k', '--log_samples']' timed out after 3599.999992730096 seconds"
+  },
+  "SmolLM2-1.7B-Inst": {
+    "error": "Command '['/home/linxuhao/pred1-env/bin/python3', '-m', 'lm_eval', '--model', 'hf', '--model_args', 'pretrained=HuggingFaceTB/SmolLM2-1.7B-Instruct,attn_implementation=eager,dtype=float16', '--tasks', 'gsm8k', '--num_fewshot', '8', '--batch_size', 'auto', '--output_path', '/home/linxuhao/papers/mathematical-life/experiments/results/gsm8k', '--log_samples']' died with <Signals.SIGABRT: 6>."
+  }
+}

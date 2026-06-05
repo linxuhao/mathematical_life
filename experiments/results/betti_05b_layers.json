@@ -1,0 +1,562 @@
+{
+  "Qwen2.5-0.5B-Inst_L12_bbh_ff": {
+    "file": "activations_v3/Qwen2.5-0.5B-Inst_L12_bbh_ff.npy",
+    "name": "Qwen2.5-0.5B-Inst_L12_bbh_ff",
+    "shape": [
+      250,
+      896
+    ],
+    "beta0": 250,
+    "beta1_raw": 162,
+    "beta1": 21,
+    "eps_max": 2.2903,
+    "eps_pred": 0.0687,
+    "ripser_time_s": 0.8
+  },
+  "Qwen2.5-0.5B-Inst_L12_bbh_nav": {
+    "file": "activations_v3/Qwen2.5-0.5B-Inst_L12_bbh_nav.npy",
+    "name": "Qwen2.5-0.5B-Inst_L12_bbh_nav",
+    "shape": [
+      250,
+      896
+    ],
+    "beta0": 250,
+    "beta1_raw": 144,
+    "beta1": 17,
+    "eps_max": 2.3167,
+    "eps_pred": 0.0695,
+    "ripser_time_s": 0.9
+  },
+  "Qwen2.5-0.5B-Inst_L12_bbh_ts": {
+    "file": "activations_v3/Qwen2.5-0.5B-Inst_L12_bbh_ts.npy",
+    "name": "Qwen2.5-0.5B-Inst_L12_bbh_ts",
+    "shape": [
+      250,
+      896
+    ],
+    "beta0": 250,
+    "beta1_raw": 239,
+    "beta1": 44,
+    "eps_max": 1.3758,
+    "eps_pred": 0.0413,
+    "ripser_time_s": 0.7
+  },
+  "Qwen2.5-0.5B-Inst_L12_control": {
+    "file": "activations_v3/Qwen2.5-0.5B-Inst_L12_control.npy",
+    "name": "Qwen2.5-0.5B-Inst_L12_control",
+    "shape": [
+      979,
+      896
+    ],
+    "beta0": 979,
+    "beta1_raw": 585,
+    "beta1": 11,
+    "eps_max": 10.023,
+    "eps_pred": 0.3007,
+    "ripser_time_s": 1.1
+  },
+  "Qwen2.5-0.5B-Inst_L12_hallucination": {
+    "file": "activations_v3/Qwen2.5-0.5B-Inst_L12_hallucination.npy",
+    "name": "Qwen2.5-0.5B-Inst_L12_hallucination",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1612,
+    "beta1": 35,
+    "eps_max": 7.3043,
+    "eps_pred": 0.2191,
+    "ripser_time_s": 1.4
+  },
+  "Qwen2.5-0.5B-Inst_L12_math500": {
+    "file": "activations_v3/Qwen2.5-0.5B-Inst_L12_math500.npy",
+    "name": "Qwen2.5-0.5B-Inst_L12_math500",
+    "shape": [
+      500,
+      896
+    ],
+    "beta0": 500,
+    "beta1_raw": 311,
+    "beta1": 37,
+    "eps_max": 9.2541,
+    "eps_pred": 0.2776,
+    "ripser_time_s": 0.3
+  },
+  "Qwen2.5-0.5B-Inst_L12_narrative": {
+    "file": "activations_v3/Qwen2.5-0.5B-Inst_L12_narrative.npy",
+    "name": "Qwen2.5-0.5B-Inst_L12_narrative",
+    "shape": [
+      1317,
+      896
+    ],
+    "beta0": 1317,
+    "beta1_raw": 948,
+    "beta1": 15,
+    "eps_max": 9.7552,
+    "eps_pred": 0.2927,
+    "ripser_time_s": 2.3
+  },
+  "Qwen2.5-0.5B-Inst_L12_reasoning": {
+    "file": "activations_v3/Qwen2.5-0.5B-Inst_L12_reasoning.npy",
+    "name": "Qwen2.5-0.5B-Inst_L12_reasoning",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1580,
+    "beta1": 82,
+    "eps_max": 6.1495,
+    "eps_pred": 0.1845,
+    "ripser_time_s": 1.2
+  },
+  "Qwen2.5-0.5B-base_L12_bbh_ff": {
+    "file": "activations_v3/Qwen2.5-0.5B-base_L12_bbh_ff.npy",
+    "name": "Qwen2.5-0.5B-base_L12_bbh_ff",
+    "shape": [
+      250,
+      896
+    ],
+    "beta0": 250,
+    "beta1_raw": 121,
+    "beta1": 9,
+    "eps_max": 2.4913,
+    "eps_pred": 0.0747,
+    "ripser_time_s": 0.0
+  },
+  "Qwen2.5-0.5B-base_L12_bbh_nav": {
+    "file": "activations_v3/Qwen2.5-0.5B-base_L12_bbh_nav.npy",
+    "name": "Qwen2.5-0.5B-base_L12_bbh_nav",
+    "shape": [
+      250,
+      896
+    ],
+    "beta0": 250,
+    "beta1_raw": 159,
+    "beta1": 21,
+    "eps_max": 1.9134,
+    "eps_pred": 0.0574,
+    "ripser_time_s": 0.0
+  },
+  "Qwen2.5-0.5B-base_L12_bbh_ts": {
+    "file": "activations_v3/Qwen2.5-0.5B-base_L12_bbh_ts.npy",
+    "name": "Qwen2.5-0.5B-base_L12_bbh_ts",
+    "shape": [
+      250,
+      896
+    ],
+    "beta0": 250,
+    "beta1_raw": 146,
+    "beta1": 34,
+    "eps_max": 12.8889,
+    "eps_pred": 0.3867,
+    "ripser_time_s": 0.1
+  },
+  "Qwen2.5-0.5B-base_L12_control": {
+    "file": "activations_v3/Qwen2.5-0.5B-base_L12_control.npy",
+    "name": "Qwen2.5-0.5B-base_L12_control",
+    "shape": [
+      979,
+      896
+    ],
+    "beta0": 979,
+    "beta1_raw": 572,
+    "beta1": 29,
+    "eps_max": 23.8919,
+    "eps_pred": 0.7168,
+    "ripser_time_s": 0.6
+  },
+  "Qwen2.5-0.5B-base_L12_hallucination": {
+    "file": "activations_v3/Qwen2.5-0.5B-base_L12_hallucination.npy",
+    "name": "Qwen2.5-0.5B-base_L12_hallucination",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1223,
+    "beta1": 2,
+    "eps_max": 16.7351,
+    "eps_pred": 0.5021,
+    "ripser_time_s": 1.2
+  },
+  "Qwen2.5-0.5B-base_L12_math500": {
+    "file": "activations_v3/Qwen2.5-0.5B-base_L12_math500.npy",
+    "name": "Qwen2.5-0.5B-base_L12_math500",
+    "shape": [
+      500,
+      896
+    ],
+    "beta0": 500,
+    "beta1_raw": 254,
+    "beta1": 24,
+    "eps_max": 15.4759,
+    "eps_pred": 0.4643,
+    "ripser_time_s": 0.2
+  },
+  "Qwen2.5-0.5B-base_L12_narrative": {
+    "file": "activations_v3/Qwen2.5-0.5B-base_L12_narrative.npy",
+    "name": "Qwen2.5-0.5B-base_L12_narrative",
+    "shape": [
+      1317,
+      896
+    ],
+    "beta0": 1317,
+    "beta1_raw": 906,
+    "beta1": 4,
+    "eps_max": 22.2169,
+    "eps_pred": 0.6665,
+    "ripser_time_s": 1.9
+  },
+  "Qwen2.5-0.5B-base_L12_reasoning": {
+    "file": "activations_v3/Qwen2.5-0.5B-base_L12_reasoning.npy",
+    "name": "Qwen2.5-0.5B-base_L12_reasoning",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1263,
+    "beta1": 22,
+    "eps_max": 11.7766,
+    "eps_pred": 0.3533,
+    "ripser_time_s": 1.1
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L10_control": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L10_control.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L10_control",
+    "shape": [
+      979,
+      896
+    ],
+    "beta0": 979,
+    "beta1_raw": 885,
+    "beta1": 7,
+    "eps_max": 24.784,
+    "eps_pred": 0.7435,
+    "ripser_time_s": 1.4
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L10_hallucination": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L10_hallucination.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L10_hallucination",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1538,
+    "beta1": 1,
+    "eps_max": 21.7314,
+    "eps_pred": 0.6519,
+    "ripser_time_s": 0.9
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L10_reasoning": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L10_reasoning.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L10_reasoning",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1476,
+    "beta1": 0,
+    "eps_max": 21.0367,
+    "eps_pred": 0.6311,
+    "ripser_time_s": 1.0
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L15_control": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L15_control.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L15_control",
+    "shape": [
+      979,
+      896
+    ],
+    "beta0": 979,
+    "beta1_raw": 822,
+    "beta1": 3,
+    "eps_max": 24.9419,
+    "eps_pred": 0.7483,
+    "ripser_time_s": 1.2
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L15_hallucination": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L15_hallucination.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L15_hallucination",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1548,
+    "beta1": 0,
+    "eps_max": 23.3317,
+    "eps_pred": 0.6999,
+    "ripser_time_s": 0.8
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L15_reasoning": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L15_reasoning.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L15_reasoning",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1542,
+    "beta1": 0,
+    "eps_max": 23.3335,
+    "eps_pred": 0.7,
+    "ripser_time_s": 0.9
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L20_control": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L20_control.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L20_control",
+    "shape": [
+      979,
+      896
+    ],
+    "beta0": 979,
+    "beta1_raw": 832,
+    "beta1": 0,
+    "eps_max": 59.9049,
+    "eps_pred": 1.7971,
+    "ripser_time_s": 1.1
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L20_hallucination": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L20_hallucination.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L20_hallucination",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1469,
+    "beta1": 0,
+    "eps_max": 57.7794,
+    "eps_pred": 1.7334,
+    "ripser_time_s": 0.9
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L20_reasoning": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L20_reasoning.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L20_reasoning",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1488,
+    "beta1": 0,
+    "eps_max": 56.5075,
+    "eps_pred": 1.6952,
+    "ripser_time_s": 1.0
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L5_control": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L5_control.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L5_control",
+    "shape": [
+      979,
+      896
+    ],
+    "beta0": 979,
+    "beta1_raw": 902,
+    "beta1": 2,
+    "eps_max": 15.5846,
+    "eps_pred": 0.4675,
+    "ripser_time_s": 1.6
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L5_hallucination": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L5_hallucination.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L5_hallucination",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1554,
+    "beta1": 0,
+    "eps_max": 14.233,
+    "eps_pred": 0.427,
+    "ripser_time_s": 0.9
+  },
+  "Qwen__Qwen2.5-0.5B-Instruct_L5_reasoning": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L5_reasoning.npy",
+    "name": "Qwen__Qwen2.5-0.5B-Instruct_L5_reasoning",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1623,
+    "beta1": 0,
+    "eps_max": 14.4356,
+    "eps_pred": 0.4331,
+    "ripser_time_s": 0.9
+  },
+  "Qwen__Qwen2.5-0.5B_L10_control": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L10_control.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L10_control",
+    "shape": [
+      979,
+      896
+    ],
+    "beta0": 979,
+    "beta1_raw": 681,
+    "beta1": 2,
+    "eps_max": 38.6913,
+    "eps_pred": 1.1607,
+    "ripser_time_s": 1.6
+  },
+  "Qwen__Qwen2.5-0.5B_L10_hallucination": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L10_hallucination.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L10_hallucination",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1394,
+    "beta1": 0,
+    "eps_max": 33.9721,
+    "eps_pred": 1.0192,
+    "ripser_time_s": 0.8
+  },
+  "Qwen__Qwen2.5-0.5B_L10_reasoning": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L10_reasoning.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L10_reasoning",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1473,
+    "beta1": 0,
+    "eps_max": 33.1975,
+    "eps_pred": 0.9959,
+    "ripser_time_s": 0.8
+  },
+  "Qwen__Qwen2.5-0.5B_L15_control": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L15_control.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L15_control",
+    "shape": [
+      979,
+      896
+    ],
+    "beta0": 979,
+    "beta1_raw": 689,
+    "beta1": 0,
+    "eps_max": 35.9992,
+    "eps_pred": 1.08,
+    "ripser_time_s": 1.6
+  },
+  "Qwen__Qwen2.5-0.5B_L15_hallucination": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L15_hallucination.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L15_hallucination",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1386,
+    "beta1": 0,
+    "eps_max": 32.6524,
+    "eps_pred": 0.9796,
+    "ripser_time_s": 0.8
+  },
+  "Qwen__Qwen2.5-0.5B_L15_reasoning": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L15_reasoning.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L15_reasoning",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1411,
+    "beta1": 0,
+    "eps_max": 30.455,
+    "eps_pred": 0.9137,
+    "ripser_time_s": 0.8
+  },
+  "Qwen__Qwen2.5-0.5B_L20_control": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L20_control.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L20_control",
+    "shape": [
+      979,
+      896
+    ],
+    "beta0": 979,
+    "beta1_raw": 631,
+    "beta1": 0,
+    "eps_max": 67.3425,
+    "eps_pred": 2.0203,
+    "ripser_time_s": 1.1
+  },
+  "Qwen__Qwen2.5-0.5B_L20_hallucination": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L20_hallucination.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L20_hallucination",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1408,
+    "beta1": 1,
+    "eps_max": 58.8518,
+    "eps_pred": 1.7656,
+    "ripser_time_s": 0.9
+  },
+  "Qwen__Qwen2.5-0.5B_L20_reasoning": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L20_reasoning.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L20_reasoning",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1432,
+    "beta1": 0,
+    "eps_max": 58.6053,
+    "eps_pred": 1.7582,
+    "ripser_time_s": 1.0
+  },
+  "Qwen__Qwen2.5-0.5B_L5_control": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L5_control.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L5_control",
+    "shape": [
+      979,
+      896
+    ],
+    "beta0": 979,
+    "beta1_raw": 702,
+    "beta1": 0,
+    "eps_max": 23.3306,
+    "eps_pred": 0.6999,
+    "ripser_time_s": 1.8
+  },
+  "Qwen__Qwen2.5-0.5B_L5_hallucination": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L5_hallucination.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L5_hallucination",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1419,
+    "beta1": 0,
+    "eps_max": 16.9633,
+    "eps_pred": 0.5089,
+    "ripser_time_s": 1.0
+  },
+  "Qwen__Qwen2.5-0.5B_L5_reasoning": {
+    "file": "activations_v3/Qwen__Qwen2.5-0.5B_L5_reasoning.npy",
+    "name": "Qwen__Qwen2.5-0.5B_L5_reasoning",
+    "shape": [
+      1319,
+      896
+    ],
+    "beta0": 1319,
+    "beta1_raw": 1345,
+    "beta1": 0,
+    "eps_max": 15.5326,
+    "eps_pred": 0.466,
+    "ripser_time_s": 0.7
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "R_FF": {
+    "desc": "reasoning vs bbh_ff",
+    "type": "prompt_pair",
+    "prompt_a": "reasoning",
+    "prompt_b": "bbh_ff",
+    "models": "all"
+  },
+  "R_NV": {
+    "desc": "reasoning vs bbh_nav",
+    "type": "prompt_pair",
+    "prompt_a": "reasoning",
+    "prompt_b": "bbh_nav",
+    "models": "all"
+  },
+  "R_TS": {
+    "desc": "reasoning vs bbh_ts",
+    "type": "prompt_pair",
+    "prompt_a": "reasoning",
+    "prompt_b": "bbh_ts",
+    "models": "all"
+  },
+  "C_FF": {
+    "desc": "control vs bbh_ff",
+    "type": "prompt_pair",
+    "prompt_a": "control",
+    "prompt_b": "bbh_ff",
+    "models": "all"
+  },
+  "C_NV": {
+    "desc": "control vs bbh_nav",
+    "type": "prompt_pair",
+    "prompt_a": "control",
+    "prompt_b": "bbh_nav",
+    "models": "all"
+  },
+  "C_TS": {
+    "desc": "control vs bbh_ts",
+    "type": "prompt_pair",
+    "prompt_a": "control",
+    "prompt_b": "bbh_ts",
+    "models": "all"
+  },
+  "N_FF": {
+    "desc": "narrative vs bbh_ff",
+    "type": "prompt_pair",
+    "prompt_a": "narrative",
+    "prompt_b": "bbh_ff",
+    "models": "all"
+  },
+  "N_NV": {
+    "desc": "narrative vs bbh_nav",
+    "type": "prompt_pair",
+    "prompt_a": "narrative",
+    "prompt_b": "bbh_nav",
+    "models": "all"
+  },
+  "N_TS": {
+    "desc": "narrative vs bbh_ts",
+    "type": "prompt_pair",
+    "prompt_a": "narrative",
+    "prompt_b": "bbh_ts",
+    "models": "all"
+  },
+  "H_FF": {
+    "desc": "hallucination vs bbh_ff",
+    "type": "prompt_pair",
+    "prompt_a": "hallucination",
+    "prompt_b": "bbh_ff",
+    "models": "all"
+  },
+  "H_NV": {
+    "desc": "hallucination vs bbh_nav",
+    "type": "prompt_pair",
+    "prompt_a": "hallucination",
+    "prompt_b": "bbh_nav",
+    "models": "all"
+  },
+  "H_TS": {
+    "desc": "hallucination vs bbh_ts",
+    "type": "prompt_pair",
+    "prompt_a": "hallucination",
+    "prompt_b": "bbh_ts",
+    "models": "all"
+  },
+  "FF_NV": {
+    "desc": "bbh_ff vs bbh_nav",
+    "type": "prompt_pair",
+    "prompt_a": "bbh_ff",
+    "prompt_b": "bbh_nav",
+    "models": "all"
+  },
+  "FF_TS": {
+    "desc": "bbh_ff vs bbh_ts",
+    "type": "prompt_pair",
+    "prompt_a": "bbh_ff",
+    "prompt_b": "bbh_ts",
+    "models": "all"
+  },
+  "NV_TS": {
+    "desc": "bbh_nav vs bbh_ts",
+    "type": "prompt_pair",
+    "prompt_a": "bbh_nav",
+    "prompt_b": "bbh_ts",
+    "models": "all"
+  }
+}

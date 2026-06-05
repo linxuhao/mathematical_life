@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# LaTeX build artifacts (PDF is committed; intermediates are not)
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.toc
+*.synctex.gz
+
+# Large, regenerable activation caches — NOT committed.
+# Reproduce with actopo (see README); each .npy/.npz is a per-model activation cloud.
+experiments/activations_v3/
+experiments/activations/
+*.npy
+*.npz
+*.safetensors
+*.bin

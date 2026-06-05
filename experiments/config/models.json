@@ -1,0 +1,194 @@
+[
+  {
+    "hf": "Qwen/Qwen3.5-0.8B-Base",
+    "name": "Qwen3.5-0.8B-base",
+    "family": "Qwen3.5",
+    "n_layers": 24,
+    "batch": 8,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3.5-0.8B",
+    "name": "Qwen3.5-0.8B-Inst",
+    "family": "Qwen3.5",
+    "n_layers": 24,
+    "batch": 8,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3.5-2B-Base",
+    "name": "Qwen3.5-2B-base",
+    "family": "Qwen3.5",
+    "n_layers": 28,
+    "batch": 8,
+    "gpu": 1
+  },
+  {
+    "hf": "Qwen/Qwen3.5-2B",
+    "name": "Qwen3.5-2B-Inst",
+    "family": "Qwen3.5",
+    "n_layers": 28,
+    "batch": 8,
+    "gpu": 1
+  },
+  {
+    "hf": "Qwen/Qwen3.5-4B-Base",
+    "name": "Qwen3.5-4B-base",
+    "family": "Qwen3.5",
+    "n_layers": 36,
+    "batch": 2,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3.5-4B",
+    "name": "Qwen3.5-4B-Inst",
+    "family": "Qwen3.5",
+    "n_layers": 36,
+    "batch": 2,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3.5-9B-Base",
+    "name": "Qwen3.5-9B-base",
+    "family": "Qwen3.5",
+    "n_layers": 40,
+    "batch": 1,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3.5-9B",
+    "name": "Qwen3.5-9B-Inst",
+    "family": "Qwen3.5",
+    "n_layers": 40,
+    "batch": 1,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3-0.6B-Base",
+    "name": "Qwen3-0.6B-base",
+    "family": "Qwen3",
+    "n_layers": 28,
+    "batch": 8,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3-0.6B",
+    "name": "Qwen3-0.6B-Inst",
+    "family": "Qwen3",
+    "n_layers": 28,
+    "batch": 8,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3-1.7B-Base",
+    "name": "Qwen3-1.7B-base",
+    "family": "Qwen3",
+    "n_layers": 28,
+    "batch": 8,
+    "gpu": 1
+  },
+  {
+    "hf": "Qwen/Qwen3-1.7B",
+    "name": "Qwen3-1.7B-Inst",
+    "family": "Qwen3",
+    "n_layers": 28,
+    "batch": 8,
+    "gpu": 1
+  },
+  {
+    "hf": "Qwen/Qwen3-4B-Base",
+    "name": "Qwen3-4B-base",
+    "family": "Qwen3",
+    "n_layers": 36,
+    "batch": 2,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3-4B",
+    "name": "Qwen3-4B-Inst",
+    "family": "Qwen3",
+    "n_layers": 36,
+    "batch": 2,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3-8B-Base",
+    "name": "Qwen3-8B-base",
+    "family": "Qwen3",
+    "n_layers": 36,
+    "batch": 1,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen3-8B",
+    "name": "Qwen3-8B-Inst",
+    "family": "Qwen3",
+    "n_layers": 36,
+    "batch": 1,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen2.5-0.5B",
+    "name": "Qwen2.5-0.5B-base",
+    "family": "Qwen2.5",
+    "n_layers": 24,
+    "batch": 8,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen2.5-0.5B-Instruct",
+    "name": "Qwen2.5-0.5B-Inst",
+    "family": "Qwen2.5",
+    "n_layers": 24,
+    "batch": 8,
+    "gpu": 0
+  },
+  {
+    "hf": "Qwen/Qwen2.5-3B",
+    "name": "Qwen2.5-3B-base",
+    "family": "Qwen2.5",
+    "n_layers": 36,
+    "batch": 2,
+    "gpu": 1
+  },
+  {
+    "hf": "Qwen/Qwen2.5-3B-Instruct",
+    "name": "Qwen2.5-3B-Inst",
+    "family": "Qwen2.5",
+    "n_layers": 36,
+    "batch": 2,
+    "gpu": 1
+  },
+  {
+    "hf": "HuggingFaceTB/SmolLM2-1.7B",
+    "name": "SmolLM2-1.7B-base",
+    "family": "SmolLM2",
+    "n_layers": 24,
+    "batch": 8,
+    "gpu": 0
+  },
+  {
+    "hf": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "name": "SmolLM2-1.7B-Inst",
+    "family": "SmolLM2",
+    "n_layers": 24,
+    "batch": 8,
+    "gpu": 0
+  },
+  {
+    "hf": "google/gemma-4-E2B",
+    "name": "Gemma4-E2B-base",
+    "family": "Gemma4",
+    "n_layers": 34,
+    "batch": 8,
+    "gpu": 1
+  },
+  {
+    "hf": "google/gemma-4-E2B-it",
+    "name": "Gemma4-E2B-Inst",
+    "family": "Gemma4",
+    "n_layers": 34,
+    "batch": 8,
+    "gpu": 1
+  }
+]

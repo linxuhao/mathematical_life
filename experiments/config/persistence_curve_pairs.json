@@ -1,0 +1,20 @@
+[
+  {"file": "activations_v3/Qwen3.5-9B-Inst_L20_reasoning.npy", "label": "Qwen3.5-9B-Inst reasoning (raw=1074, β₁=1)"},
+  {"file": "activations_v3/Qwen3.5-9B-Inst_L20_hallucination.npy", "label": "Qwen3.5-9B-Inst hallucination (raw=1027, β₁=17)"},
+  {"file": "activations_v3/Qwen3.5-9B-Inst_L20_control.npy", "label": "Qwen3.5-9B-Inst control (raw=486, β₁=16)"},
+  {"file": "activations_v3/Qwen3.5-9B-Inst_L20_narrative.npy", "label": "Qwen3.5-9B-Inst narrative (raw=516, β₁=29)"},
+
+  {"file": "activations_v3/Qwen3.5-9B-base_L20_reasoning.npy", "label": "Qwen3.5-9B-base reasoning (β₁=27)"},
+  {"file": "activations_v3/Qwen3.5-9B-base_L20_hallucination.npy", "label": "Qwen3.5-9B-base hallucination (β₁=10)"},
+
+  {"file": "activations_v3/Qwen3.5-0.8B-Inst_L12_reasoning.npy", "label": "Qwen3.5-0.8B-Inst reasoning (β₁=40)"},
+  {"file": "activations_v3/Qwen3.5-0.8B-Inst_L12_hallucination.npy", "label": "Qwen3.5-0.8B-Inst hallucination (β₁=13)"},
+  {"file": "activations_v3/Qwen3.5-0.8B-base_L12_reasoning.npy", "label": "Qwen3.5-0.8B-base reasoning (β₁=29)"},
+  {"file": "activations_v3/Qwen3.5-0.8B-base_L12_hallucination.npy", "label": "Qwen3.5-0.8B-base hallucination (β₁=25)"},
+
+  {"file": "activations_v3/Qwen2.5-0.5B-Inst_L12_reasoning.npy", "label": "Qwen2.5-0.5B-Inst reasoning (β₁=82)"},
+  {"file": "activations_v3/Qwen2.5-0.5B-base_L12_reasoning.npy", "label": "Qwen2.5-0.5B-base reasoning (β₁=22)"},
+
+  {"file": "activations_v3/Qwen3-8B-base_L18_reasoning.npy", "label": "Qwen3-8B-base reasoning (β₁=7, anomaly)"},
+  {"file": "activations_v3/Qwen3-8B-base_L18_control.npy", "label": "Qwen3-8B-base control (β₁=5)"}
+]

@@ -1,0 +1,130 @@
+{
+  "Qwen3.5-0.8B-base/lambada_openai": {
+    "elapsed_s": 115.4,
+    "status": "ok"
+  },
+  "Qwen3.5-0.8B-base/hellaswag": {
+    "elapsed_s": 168.2,
+    "status": "exit_-9"
+  },
+  "Qwen3.5-0.8B-base/arc_challenge": {
+    "elapsed_s": 82.4,
+    "status": "ok"
+  },
+  "Qwen3.5-0.8B-base/winogrande": {
+    "elapsed_s": 51.3,
+    "status": "ok"
+  },
+  "Qwen3.5-0.8B-Inst/lambada_openai": {
+    "elapsed_s": 235.2,
+    "status": "ok"
+  },
+  "Qwen3.5-0.8B-Inst/hellaswag": {
+    "elapsed_s": 27.0,
+    "status": "exit_1"
+  },
+  "Qwen3.5-0.8B-Inst/arc_challenge": {
+    "elapsed_s": 15.1,
+    "status": "exit_1"
+  },
+  "Qwen3.5-0.8B-Inst/winogrande": {
+    "elapsed_s": 51.6,
+    "status": "ok"
+  },
+  "Qwen3.5-2B-base/lambada_openai": {
+    "elapsed_s": 158.0,
+    "status": "ok"
+  },
+  "Qwen3.5-2B-base/hellaswag": {
+    "elapsed_s": 1027.8,
+    "status": "ok"
+  },
+  "Qwen3.5-2B-base/arc_challenge": {
+    "elapsed_s": 95.2,
+    "status": "ok"
+  },
+  "Qwen3.5-2B-base/winogrande": {
+    "elapsed_s": 55.9,
+    "status": "ok"
+  },
+  "Qwen3.5-2B-Inst/lambada_openai": {
+    "elapsed_s": 153.7,
+    "status": "ok"
+  },
+  "Qwen3.5-2B-Inst/hellaswag": {
+    "elapsed_s": 936.6,
+    "status": "ok"
+  },
+  "Qwen3.5-2B-Inst/arc_challenge": {
+    "elapsed_s": 87.5,
+    "status": "ok"
+  },
+  "Qwen3.5-2B-Inst/winogrande": {
+    "elapsed_s": 51.5,
+    "status": "ok"
+  },
+  "Qwen3.5-4B-base/lambada_openai": {
+    "elapsed_s": 10.6,
+    "status": "exit_1"
+  },
+  "Qwen3.5-4B-base/hellaswag": {
+    "elapsed_s": 12.9,
+    "status": "exit_1"
+  },
+  "Qwen3.5-4B-base/arc_challenge": {
+    "elapsed_s": 10.5,
+    "status": "exit_1"
+  },
+  "Qwen3.5-4B-base/winogrande": {
+    "elapsed_s": 11.9,
+    "status": "exit_1"
+  },
+  "Qwen3.5-4B-Inst/lambada_openai": {
+    "elapsed_s": 10.4,
+    "status": "exit_1"
+  },
+  "Qwen3.5-4B-Inst/hellaswag": {
+    "elapsed_s": 10.4,
+    "status": "exit_1"
+  },
+  "Qwen3.5-4B-Inst/arc_challenge": {
+    "elapsed_s": 10.5,
+    "status": "exit_1"
+  },
+  "Qwen3.5-4B-Inst/winogrande": {
+    "elapsed_s": 10.4,
+    "status": "exit_1"
+  },
+  "Qwen3.5-9B-base/lambada_openai": {
+    "elapsed_s": 10.3,
+    "status": "exit_1"
+  },
+  "Qwen3.5-9B-base/hellaswag": {
+    "elapsed_s": 10.3,
+    "status": "exit_1"
+  },
+  "Qwen3.5-9B-base/arc_challenge": {
+    "elapsed_s": 10.5,
+    "status": "exit_1"
+  },
+  "Qwen3.5-9B-base/winogrande": {
+    "elapsed_s": 10.3,
+    "status": "exit_1"
+  },
+  "Qwen3.5-9B-Inst/lambada_openai": {
+    "elapsed_s": 10.3,
+    "status": "exit_1"
+  },
+  "Qwen3.5-9B-Inst/hellaswag": {
+    "elapsed_s": 10.3,
+    "status": "exit_1"
+  },
+  "Qwen3.5-9B-Inst/arc_challenge": {
+    "elapsed_s": 10.3,
+    "status": "exit_1"
+  },
+  "Qwen3.5-9B-Inst/winogrande": {
+    "elapsed_s": 10.3,
+    "status": "exit_1"
+  }
+}

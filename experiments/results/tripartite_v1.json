@@ -1,0 +1,54 @@
+{
+  "r_true": {
+    "beta1_raw": 122,
+    "beta1": 16,
+    "eps_max": 8.8182,
+    "eps_pred": 0.2645,
+    "surv_001": 65,
+    "surv_rate": 53.3,
+    "n_points": 204,
+    "dim": 2048
+  },
+  "r_flawed": {
+    "beta1_raw": 770,
+    "beta1": 56,
+    "eps_max": 10.0139,
+    "eps_pred": 0.3004,
+    "surv_001": 335,
+    "surv_rate": 43.5,
+    "n_points": 1115,
+    "dim": 2048
+  },
+  "hallucination": {
+    "beta1_raw": 986,
+    "beta1": 103,
+    "eps_max": 9.4048,
+    "eps_pred": 0.2821,
+    "surv_001": 472,
+    "surv_rate": 47.9,
+    "n_points": 1319,
+    "dim": 2048
+  },
+  "union_Rtrue_Rflawed": {
+    "verdict": "SEPARATE",
+    "U_beta1": 110,
+    "sum": 72,
+    "intersection": -38,
+    "overlap_pct": -67.9
+  },
+  "union_Rtrue_H": {
+    "verdict": "SEPARATE",
+    "U_beta1": 130,
+    "sum": 119,
+    "intersection": -11,
+    "overlap_pct": -10.7
+  },
+  "bottleneck_Rtrue_Rflawed": 0.264114,
+  "bottleneck_Rtrue_H": 0.295722,
+  "phi_Rflawed_H": 0.91,
+  "predictions": [
+    "\u274c R_flawed SEPARATE from R_true \u2014 different manifold (unexpected)",
+    "\u26a0\ufe0f  H separate region but similar barcode \u2014 coordinate rotation?",
+    "\u2705 R_flawed (43.5%) less persistent than R_true (53.3%) \u2014 flawed reasoning is fragile"
+  ]
+}

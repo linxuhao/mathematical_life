@@ -1,0 +1,29 @@
+{
+  "description": "Qwen2.5-0.5B layer-wise Union tests. Requires extract_05b_layers.py output.",
+  "pairs": [
+    {"label": "Qwen2.5-0.5B-base L5 R∪C", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L5_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B_L5_control.npy"},
+    {"label": "Qwen2.5-0.5B-base L10 R∪C", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L10_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B_L10_control.npy"},
+    {"label": "Qwen2.5-0.5B-base L15 R∪C", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L15_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B_L15_control.npy"},
+    {"label": "Qwen2.5-0.5B-base L20 R∪C", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L20_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B_L20_control.npy"},
+
+    {"label": "Qwen2.5-0.5B-base L5 R∪H", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L5_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B_L5_hallucination.npy"},
+    {"label": "Qwen2.5-0.5B-base L10 R∪H", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L10_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B_L10_hallucination.npy"},
+    {"label": "Qwen2.5-0.5B-base L15 R∪H", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L15_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B_L15_hallucination.npy"},
+    {"label": "Qwen2.5-0.5B-base L20 R∪H", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L20_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B_L20_hallucination.npy"},
+
+    {"label": "Qwen2.5-0.5B-Inst L5 R∪C", "a": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L5_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L5_control.npy"},
+    {"label": "Qwen2.5-0.5B-Inst L10 R∪C", "a": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L10_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L10_control.npy"},
+    {"label": "Qwen2.5-0.5B-Inst L15 R∪C", "a": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L15_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L15_control.npy"},
+    {"label": "Qwen2.5-0.5B-Inst L20 R∪C", "a": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L20_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L20_control.npy"},
+
+    {"label": "Qwen2.5-0.5B-Inst L5 R∪H", "a": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L5_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L5_hallucination.npy"},
+    {"label": "Qwen2.5-0.5B-Inst L10 R∪H", "a": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L10_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L10_hallucination.npy"},
+    {"label": "Qwen2.5-0.5B-Inst L15 R∪H", "a": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L15_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L15_hallucination.npy"},
+    {"label": "Qwen2.5-0.5B-Inst L20 R∪H", "a": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L20_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L20_hallucination.npy"},
+
+    {"label": "Base∪Inst L5 R", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L5_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L5_reasoning.npy"},
+    {"label": "Base∪Inst L10 R", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L10_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L10_reasoning.npy"},
+    {"label": "Base∪Inst L15 R", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L15_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L15_reasoning.npy"},
+    {"label": "Base∪Inst L20 R", "a": "activations_v3/Qwen__Qwen2.5-0.5B_L20_reasoning.npy", "b": "activations_v3/Qwen__Qwen2.5-0.5B-Instruct_L20_reasoning.npy"}
+  ]
+}

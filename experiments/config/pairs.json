@@ -1,0 +1,47 @@
+{
+  "R_N": {
+    "desc": "reasoning vs narrative hallucination (cross-topic)",
+    "type": "prompt_pair",
+    "prompt_a": "reasoning",
+    "prompt_b": "narrative",
+    "models": "all"
+  },
+  "R_C": {
+    "desc": "reasoning vs factual control (specificity)",
+    "type": "prompt_pair",
+    "prompt_a": "reasoning",
+    "prompt_b": "control",
+    "models": "all"
+  },
+  "C_N": {
+    "desc": "control vs narrative hallucination",
+    "type": "prompt_pair",
+    "prompt_a": "control",
+    "prompt_b": "narrative",
+    "models": "all"
+  },
+  "R_P": {
+    "desc": "reasoning vs same-topic perturbed hallucination",
+    "type": "prompt_pair",
+    "prompt_a": "reasoning",
+    "prompt_b": "hallucination",
+    "models": [
+      "Qwen3.5-0.8B-base",
+      "Qwen3.5-0.8B-Inst",
+      "Qwen3.5-2B-base",
+      "Qwen3.5-2B-Inst"
+    ]
+  },
+  "Base_Inst_R": {
+    "desc": "base vs instruct reasoning (alignment remapping)",
+    "type": "model_pair",
+    "prompt": "reasoning",
+    "families": [
+      "Qwen3.5",
+      "Qwen3",
+      "Qwen2.5",
+      "SmolLM2",
+      "Gemma4"
+    ]
+  }
+}

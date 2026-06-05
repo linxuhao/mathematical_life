@@ -1,0 +1,1124 @@
+{
+  "h1_capacity": {
+    "n_models": 8,
+    "n_independent": 8,
+    "rho_gsm8k": -0.9523809523809524,
+    "p_gsm8k": 0.000260400024387251,
+    "rho_hallucination": 0.9523809523809524,
+    "p_hallucination": 0.000260400024387251,
+    "h1_status": "refuted",
+    "h1_capacity_supported": false,
+    "note": "H1 (original): \u03b2\u2081 should correlate + with GSM8K and \u2212 with hallucination. NEGATIVE \u03c1_gsm8k REFUTES the original prediction but IS a strong empirical correlation \u2014 fewer loops = smarter model. This supports a topological PRUNING interpretation: alignment reduces \u03b2\u2081.",
+    "rank_table": [
+      {
+        "model": "Qwen3.5-0.8B-base",
+        "layer": "L12",
+        "beta1": 169.0,
+        "gsm8k": 0.02,
+        "hall_rate": 0.7
+      },
+      {
+        "model": "Qwen3.5-0.8B-Inst",
+        "layer": "L12",
+        "beta1": 39.0,
+        "gsm8k": 0.25,
+        "hall_rate": 0.35
+      },
+      {
+        "model": "Qwen3.5-2B-base",
+        "layer": "L12",
+        "beta1": 148.0,
+        "gsm8k": 0.05,
+        "hall_rate": 0.6
+      },
+      {
+        "model": "Qwen3.5-2B-Inst",
+        "layer": "L12",
+        "beta1": 68.0,
+        "gsm8k": 0.45,
+        "hall_rate": 0.25
+      },
+      {
+        "model": "Qwen3.5-4B-base",
+        "layer": "L16",
+        "beta1": 124.0,
+        "gsm8k": 0.08,
+        "hall_rate": 0.55
+      },
+      {
+        "model": "Qwen3.5-4B-Inst",
+        "layer": "L16",
+        "beta1": 20.0,
+        "gsm8k": 0.6,
+        "hall_rate": 0.18
+      },
+      {
+        "model": "Qwen3.5-9B-base",
+        "layer": "L16",
+        "beta1": 106.0,
+        "gsm8k": 0.12,
+        "hall_rate": 0.5
+      },
+      {
+        "model": "Qwen3.5-9B-Inst",
+        "layer": "L16",
+        "beta1": 21.0,
+        "gsm8k": 0.75,
+        "hall_rate": 0.12
+      }
+    ]
+  },
+  "h2_shared_substrate": {
+    "n_models_layers": 24,
+    "n_task_invariant": 5,
+    "h2_supported": false,
+    "fraction_invariant": 0.20833333333333334,
+    "details": {
+      "Qwen3.5-0.8B-Inst_L12": {
+        "model": "Qwen3.5-0.8B-Inst",
+        "layer": "L12",
+        "mean_beta": 48.666666666666664,
+        "max_spread": 21.0,
+        "task_invariant": "True",
+        "by_type": {
+          "control": {
+            "beta1": 47.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 60.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 39.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-0.8B-Inst_L18": {
+        "model": "Qwen3.5-0.8B-Inst",
+        "layer": "L18",
+        "mean_beta": 68.33333333333333,
+        "max_spread": 80.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 57.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 114.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 34.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-0.8B-Inst_L6": {
+        "model": "Qwen3.5-0.8B-Inst",
+        "layer": "L6",
+        "mean_beta": 44.333333333333336,
+        "max_spread": 13.0,
+        "task_invariant": "True",
+        "by_type": {
+          "control": {
+            "beta1": 48.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 49.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 36.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-0.8B-base_L12": {
+        "model": "Qwen3.5-0.8B-base",
+        "layer": "L12",
+        "mean_beta": 116.0,
+        "max_spread": 121.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 48.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 131.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 169.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-0.8B-base_L18": {
+        "model": "Qwen3.5-0.8B-base",
+        "layer": "L18",
+        "mean_beta": 62.333333333333336,
+        "max_spread": 91.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 13.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 70.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 104.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-0.8B-base_L6": {
+        "model": "Qwen3.5-0.8B-base",
+        "layer": "L6",
+        "mean_beta": 118.66666666666667,
+        "max_spread": 146.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 42.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 126.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 188.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-2B-Inst_L12": {
+        "model": "Qwen3.5-2B-Inst",
+        "layer": "L12",
+        "mean_beta": 86.33333333333333,
+        "max_spread": 29.0,
+        "task_invariant": "True",
+        "by_type": {
+          "control": {
+            "beta1": 94.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 97.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 68.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-2B-Inst_L18": {
+        "model": "Qwen3.5-2B-Inst",
+        "layer": "L18",
+        "mean_beta": 95.66666666666667,
+        "max_spread": 50.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 66.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 105.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 116.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-2B-Inst_L6": {
+        "model": "Qwen3.5-2B-Inst",
+        "layer": "L6",
+        "mean_beta": 58.0,
+        "max_spread": 51.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 86.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 53.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 35.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-2B-base_L12": {
+        "model": "Qwen3.5-2B-base",
+        "layer": "L12",
+        "mean_beta": 118.0,
+        "max_spread": 94.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 56.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 150.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 148.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-2B-base_L18": {
+        "model": "Qwen3.5-2B-base",
+        "layer": "L18",
+        "mean_beta": 79.66666666666667,
+        "max_spread": 113.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 22.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 135.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 82.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-2B-base_L6": {
+        "model": "Qwen3.5-2B-base",
+        "layer": "L6",
+        "mean_beta": 107.66666666666667,
+        "max_spread": 178.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 15.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 115.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 193.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-4B-Inst_L16": {
+        "model": "Qwen3.5-4B-Inst",
+        "layer": "L16",
+        "mean_beta": 27.666666666666668,
+        "max_spread": 43.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 53.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 10.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 20.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-4B-Inst_L24": {
+        "model": "Qwen3.5-4B-Inst",
+        "layer": "L24",
+        "mean_beta": 31.333333333333332,
+        "max_spread": 30.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 50.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 24.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 20.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-4B-Inst_L8": {
+        "model": "Qwen3.5-4B-Inst",
+        "layer": "L8",
+        "mean_beta": 29.333333333333332,
+        "max_spread": 47.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 60.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 13.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 15.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-4B-base_L16": {
+        "model": "Qwen3.5-4B-base",
+        "layer": "L16",
+        "mean_beta": 87.33333333333333,
+        "max_spread": 79.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 45.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 93.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 124.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-4B-base_L24": {
+        "model": "Qwen3.5-4B-base",
+        "layer": "L24",
+        "mean_beta": 92.0,
+        "max_spread": 114.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 19.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 133.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 124.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-4B-base_L8": {
+        "model": "Qwen3.5-4B-base",
+        "layer": "L8",
+        "mean_beta": 58.333333333333336,
+        "max_spread": 146.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 2.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 25.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 148.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-9B-Inst_L16": {
+        "model": "Qwen3.5-9B-Inst",
+        "layer": "L16",
+        "mean_beta": 24.0,
+        "max_spread": 7.0,
+        "task_invariant": "True",
+        "by_type": {
+          "control": {
+            "beta1": 28.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 23.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 21.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-9B-Inst_L24": {
+        "model": "Qwen3.5-9B-Inst",
+        "layer": "L24",
+        "mean_beta": 22.333333333333332,
+        "max_spread": 3.0,
+        "task_invariant": "True",
+        "by_type": {
+          "control": {
+            "beta1": 21.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 24.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 22.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-9B-Inst_L8": {
+        "model": "Qwen3.5-9B-Inst",
+        "layer": "L8",
+        "mean_beta": 29.0,
+        "max_spread": 15.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 34.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 34.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 19.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-9B-base_L16": {
+        "model": "Qwen3.5-9B-base",
+        "layer": "L16",
+        "mean_beta": 64.0,
+        "max_spread": 71.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 35.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 51.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 106.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-9B-base_L24": {
+        "model": "Qwen3.5-9B-base",
+        "layer": "L24",
+        "mean_beta": 93.66666666666667,
+        "max_spread": 117.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 24.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 116.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 141.0,
+            "std": 0.0
+          }
+        }
+      },
+      "Qwen3.5-9B-base_L8": {
+        "model": "Qwen3.5-9B-base",
+        "layer": "L8",
+        "mean_beta": 73.33333333333333,
+        "max_spread": 199.0,
+        "task_invariant": "False",
+        "by_type": {
+          "control": {
+            "beta1": 2.0,
+            "std": 0.0
+          },
+          "hallucination": {
+            "beta1": 17.0,
+            "std": 0.0
+          },
+          "reasoning": {
+            "beta1": 201.0,
+            "std": 0.0
+          }
+        }
+      }
+    }
+  },
+  "h3_routing": {
+    "n_pairs": 4,
+    "n_h3_supported": 0,
+    "h3_supported": false,
+    "pairs": [
+      {
+        "pair": "Qwen3.5-0.8B-base \u2192 Qwen3.5-0.8B-Inst",
+        "beta1_diff": 152.0,
+        "beta_similar": "False",
+        "routing_ratio_1": 0.028571428571428574,
+        "routing_ratio_2": 0.7142857142857143,
+        "routing_diff": 0.6857142857142857,
+        "h3_supported": "False"
+      },
+      {
+        "pair": "Qwen3.5-2B-base \u2192 Qwen3.5-2B-Inst",
+        "beta1_diff": 158.0,
+        "beta_similar": "False",
+        "routing_ratio_1": 0.08333333333333334,
+        "routing_ratio_2": 1.8,
+        "routing_diff": 1.7166666666666668,
+        "h3_supported": "False"
+      },
+      {
+        "pair": "Qwen3.5-4B-base \u2192 Qwen3.5-4B-Inst",
+        "beta1_diff": 133.0,
+        "beta_similar": "False",
+        "routing_ratio_1": 0.14545454545454545,
+        "routing_ratio_2": 3.3333333333333335,
+        "routing_diff": 3.187878787878788,
+        "h3_supported": "False"
+      },
+      {
+        "pair": "Qwen3.5-9B-base \u2192 Qwen3.5-9B-Inst",
+        "beta1_diff": 182.0,
+        "beta_similar": "False",
+        "routing_ratio_1": 0.24,
+        "routing_ratio_2": 6.25,
+        "routing_diff": 6.01,
+        "h3_supported": "False"
+      }
+    ]
+  },
+  "layer_sensitivity": {
+    "Qwen3.5-0.8B-Inst_control": {
+      "model": "Qwen3.5-0.8B-Inst",
+      "ptype": "control",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 47.0,
+      "max_layer_name": "L18",
+      "max_layer_beta1": 57.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "6": 48.0,
+        "12": 47.0,
+        "18": 57.0
+      }
+    },
+    "Qwen3.5-0.8B-Inst_hallucination": {
+      "model": "Qwen3.5-0.8B-Inst",
+      "ptype": "hallucination",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 60.0,
+      "max_layer_name": "L18",
+      "max_layer_beta1": 114.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "6": 49.0,
+        "12": 60.0,
+        "18": 114.0
+      }
+    },
+    "Qwen3.5-0.8B-Inst_reasoning": {
+      "model": "Qwen3.5-0.8B-Inst",
+      "ptype": "reasoning",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 39.0,
+      "max_layer_name": "L12",
+      "max_layer_beta1": 39.0,
+      "mid_is_max": true,
+      "all_layers": {
+        "6": 36.0,
+        "12": 39.0,
+        "18": 34.0
+      }
+    },
+    "Qwen3.5-0.8B-base_control": {
+      "model": "Qwen3.5-0.8B-base",
+      "ptype": "control",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 48.0,
+      "max_layer_name": "L12",
+      "max_layer_beta1": 48.0,
+      "mid_is_max": true,
+      "all_layers": {
+        "6": 42.0,
+        "12": 48.0,
+        "18": 13.0
+      }
+    },
+    "Qwen3.5-0.8B-base_hallucination": {
+      "model": "Qwen3.5-0.8B-base",
+      "ptype": "hallucination",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 131.0,
+      "max_layer_name": "L12",
+      "max_layer_beta1": 131.0,
+      "mid_is_max": true,
+      "all_layers": {
+        "6": 126.0,
+        "12": 131.0,
+        "18": 70.0
+      }
+    },
+    "Qwen3.5-0.8B-base_reasoning": {
+      "model": "Qwen3.5-0.8B-base",
+      "ptype": "reasoning",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 169.0,
+      "max_layer_name": "L6",
+      "max_layer_beta1": 188.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "6": 188.0,
+        "12": 169.0,
+        "18": 104.0
+      }
+    },
+    "Qwen3.5-2B-Inst_control": {
+      "model": "Qwen3.5-2B-Inst",
+      "ptype": "control",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 94.0,
+      "max_layer_name": "L12",
+      "max_layer_beta1": 94.0,
+      "mid_is_max": true,
+      "all_layers": {
+        "6": 86.0,
+        "12": 94.0,
+        "18": 66.0
+      }
+    },
+    "Qwen3.5-2B-Inst_hallucination": {
+      "model": "Qwen3.5-2B-Inst",
+      "ptype": "hallucination",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 97.0,
+      "max_layer_name": "L18",
+      "max_layer_beta1": 105.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "6": 53.0,
+        "12": 97.0,
+        "18": 105.0
+      }
+    },
+    "Qwen3.5-2B-Inst_reasoning": {
+      "model": "Qwen3.5-2B-Inst",
+      "ptype": "reasoning",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 68.0,
+      "max_layer_name": "L18",
+      "max_layer_beta1": 116.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "6": 35.0,
+        "12": 68.0,
+        "18": 116.0
+      }
+    },
+    "Qwen3.5-2B-base_control": {
+      "model": "Qwen3.5-2B-base",
+      "ptype": "control",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 56.0,
+      "max_layer_name": "L12",
+      "max_layer_beta1": 56.0,
+      "mid_is_max": true,
+      "all_layers": {
+        "6": 15.0,
+        "12": 56.0,
+        "18": 22.0
+      }
+    },
+    "Qwen3.5-2B-base_hallucination": {
+      "model": "Qwen3.5-2B-base",
+      "ptype": "hallucination",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 150.0,
+      "max_layer_name": "L12",
+      "max_layer_beta1": 150.0,
+      "mid_is_max": true,
+      "all_layers": {
+        "6": 115.0,
+        "12": 150.0,
+        "18": 135.0
+      }
+    },
+    "Qwen3.5-2B-base_reasoning": {
+      "model": "Qwen3.5-2B-base",
+      "ptype": "reasoning",
+      "mid_layer_name": "L12",
+      "mid_layer_beta1": 148.0,
+      "max_layer_name": "L6",
+      "max_layer_beta1": 193.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "6": 193.0,
+        "12": 148.0,
+        "18": 82.0
+      }
+    },
+    "Qwen3.5-4B-Inst_control": {
+      "model": "Qwen3.5-4B-Inst",
+      "ptype": "control",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 53.0,
+      "max_layer_name": "L8",
+      "max_layer_beta1": 60.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "8": 60.0,
+        "16": 53.0,
+        "24": 50.0
+      }
+    },
+    "Qwen3.5-4B-Inst_hallucination": {
+      "model": "Qwen3.5-4B-Inst",
+      "ptype": "hallucination",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 10.0,
+      "max_layer_name": "L24",
+      "max_layer_beta1": 24.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "8": 13.0,
+        "16": 10.0,
+        "24": 24.0
+      }
+    },
+    "Qwen3.5-4B-Inst_reasoning": {
+      "model": "Qwen3.5-4B-Inst",
+      "ptype": "reasoning",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 20.0,
+      "max_layer_name": "L16",
+      "max_layer_beta1": 20.0,
+      "mid_is_max": true,
+      "all_layers": {
+        "8": 15.0,
+        "16": 20.0,
+        "24": 20.0
+      }
+    },
+    "Qwen3.5-4B-base_control": {
+      "model": "Qwen3.5-4B-base",
+      "ptype": "control",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 45.0,
+      "max_layer_name": "L16",
+      "max_layer_beta1": 45.0,
+      "mid_is_max": true,
+      "all_layers": {
+        "8": 2.0,
+        "16": 45.0,
+        "24": 19.0
+      }
+    },
+    "Qwen3.5-4B-base_hallucination": {
+      "model": "Qwen3.5-4B-base",
+      "ptype": "hallucination",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 93.0,
+      "max_layer_name": "L24",
+      "max_layer_beta1": 133.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "8": 25.0,
+        "16": 93.0,
+        "24": 133.0
+      }
+    },
+    "Qwen3.5-4B-base_reasoning": {
+      "model": "Qwen3.5-4B-base",
+      "ptype": "reasoning",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 124.0,
+      "max_layer_name": "L8",
+      "max_layer_beta1": 148.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "8": 148.0,
+        "16": 124.0,
+        "24": 124.0
+      }
+    },
+    "Qwen3.5-9B-Inst_control": {
+      "model": "Qwen3.5-9B-Inst",
+      "ptype": "control",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 28.0,
+      "max_layer_name": "L8",
+      "max_layer_beta1": 34.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "8": 34.0,
+        "16": 28.0,
+        "24": 21.0
+      }
+    },
+    "Qwen3.5-9B-Inst_hallucination": {
+      "model": "Qwen3.5-9B-Inst",
+      "ptype": "hallucination",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 23.0,
+      "max_layer_name": "L8",
+      "max_layer_beta1": 34.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "8": 34.0,
+        "16": 23.0,
+        "24": 24.0
+      }
+    },
+    "Qwen3.5-9B-Inst_reasoning": {
+      "model": "Qwen3.5-9B-Inst",
+      "ptype": "reasoning",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 21.0,
+      "max_layer_name": "L24",
+      "max_layer_beta1": 22.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "8": 19.0,
+        "16": 21.0,
+        "24": 22.0
+      }
+    },
+    "Qwen3.5-9B-base_control": {
+      "model": "Qwen3.5-9B-base",
+      "ptype": "control",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 35.0,
+      "max_layer_name": "L16",
+      "max_layer_beta1": 35.0,
+      "mid_is_max": true,
+      "all_layers": {
+        "8": 2.0,
+        "16": 35.0,
+        "24": 24.0
+      }
+    },
+    "Qwen3.5-9B-base_hallucination": {
+      "model": "Qwen3.5-9B-base",
+      "ptype": "hallucination",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 51.0,
+      "max_layer_name": "L24",
+      "max_layer_beta1": 116.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "8": 17.0,
+        "16": 51.0,
+        "24": 116.0
+      }
+    },
+    "Qwen3.5-9B-base_reasoning": {
+      "model": "Qwen3.5-9B-base",
+      "ptype": "reasoning",
+      "mid_layer_name": "L16",
+      "mid_layer_beta1": 106.0,
+      "max_layer_name": "L8",
+      "max_layer_beta1": 201.0,
+      "mid_is_max": false,
+      "all_layers": {
+        "8": 201.0,
+        "16": 106.0,
+        "24": 141.0
+      }
+    }
+  },
+  "cross_prompt_type": {
+    "specificity_verdict": "reasoning_specific",
+    "per_prompt_type": {
+      "reasoning": {
+        "n": 8,
+        "rho_gsm8k": -0.9523809523809524,
+        "p_gsm8k": 0.000260400024387251,
+        "rho_hall": 0.9523809523809524,
+        "p_hall": 0.000260400024387251
+      },
+      "control": {
+        "n": 8,
+        "rho_gsm8k": -0.19047619047619052,
+        "p_gsm8k": 0.6514014957024814,
+        "rho_hall": 0.19047619047619052,
+        "p_hall": 0.6514014957024814
+      },
+      "hallucination": {
+        "n": 8,
+        "rho_gsm8k": -0.7857142857142858,
+        "p_gsm8k": 0.020815127253525273,
+        "rho_hall": 0.7857142857142858,
+        "p_hall": 0.020815127253525273
+      }
+    },
+    "cross_prompt_type": {
+      "reasoning_vs_control": {
+        "n": 8,
+        "rho": 0.1666666666666667,
+        "p": 0.693238811728395
+      },
+      "reasoning_vs_hallucination": {
+        "n": 8,
+        "rho": 0.8571428571428572,
+        "p": 0.0065300172547152905
+      },
+      "control_vs_hallucination": {
+        "n": 8,
+        "rho": 0.523809523809524,
+        "p": 0.1827207505397148
+      }
+    },
+    "control_reasoning_ratios": [
+      {
+        "model": "Qwen3.5-0.8B-Inst",
+        "beta1_reasoning": 39.0,
+        "beta1_control": 47.0,
+        "ratio": 1.205,
+        "is_instruct": true
+      },
+      {
+        "model": "Qwen3.5-0.8B-base",
+        "beta1_reasoning": 169.0,
+        "beta1_control": 48.0,
+        "ratio": 0.284,
+        "is_instruct": false
+      },
+      {
+        "model": "Qwen3.5-2B-Inst",
+        "beta1_reasoning": 68.0,
+        "beta1_control": 94.0,
+        "ratio": 1.382,
+        "is_instruct": true
+      },
+      {
+        "model": "Qwen3.5-2B-base",
+        "beta1_reasoning": 148.0,
+        "beta1_control": 56.0,
+        "ratio": 0.378,
+        "is_instruct": false
+      },
+      {
+        "model": "Qwen3.5-4B-Inst",
+        "beta1_reasoning": 20.0,
+        "beta1_control": 53.0,
+        "ratio": 2.65,
+        "is_instruct": true
+      },
+      {
+        "model": "Qwen3.5-4B-base",
+        "beta1_reasoning": 124.0,
+        "beta1_control": 45.0,
+        "ratio": 0.363,
+        "is_instruct": false
+      },
+      {
+        "model": "Qwen3.5-9B-Inst",
+        "beta1_reasoning": 21.0,
+        "beta1_control": 28.0,
+        "ratio": 1.333,
+        "is_instruct": true
+      },
+      {
+        "model": "Qwen3.5-9B-base",
+        "beta1_reasoning": 106.0,
+        "beta1_control": 35.0,
+        "ratio": 0.33,
+        "is_instruct": false
+      }
+    ],
+    "full_table": [
+      {
+        "model": "Qwen3.5-0.8B-Inst",
+        "gsm8k": 0.25,
+        "reasoning": 39.0,
+        "control": 47.0,
+        "hallucination": 60.0
+      },
+      {
+        "model": "Qwen3.5-0.8B-base",
+        "gsm8k": 0.02,
+        "reasoning": 169.0,
+        "control": 48.0,
+        "hallucination": 131.0
+      },
+      {
+        "model": "Qwen3.5-2B-Inst",
+        "gsm8k": 0.45,
+        "reasoning": 68.0,
+        "control": 94.0,
+        "hallucination": 97.0
+      },
+      {
+        "model": "Qwen3.5-2B-base",
+        "gsm8k": 0.05,
+        "reasoning": 148.0,
+        "control": 56.0,
+        "hallucination": 150.0
+      },
+      {
+        "model": "Qwen3.5-4B-Inst",
+        "gsm8k": 0.6,
+        "reasoning": 20.0,
+        "control": 53.0,
+        "hallucination": 10.0
+      },
+      {
+        "model": "Qwen3.5-4B-base",
+        "gsm8k": 0.08,
+        "reasoning": 124.0,
+        "control": 45.0,
+        "hallucination": 93.0
+      },
+      {
+        "model": "Qwen3.5-9B-Inst",
+        "gsm8k": 0.75,
+        "reasoning": 21.0,
+        "control": 28.0,
+        "hallucination": 23.0
+      },
+      {
+        "model": "Qwen3.5-9B-base",
+        "gsm8k": 0.12,
+        "reasoning": 106.0,
+        "control": 35.0,
+        "hallucination": 51.0
+      }
+    ]
+  },
+  "verdict": "REFUTED_MEANINGFUL"
+}

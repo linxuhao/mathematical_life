@@ -1,0 +1,32 @@
+[
+  {
+    "step": 0,
+    "svamp_acc": 38.5,
+    "truthfulqa_acc": 31.5
+  },
+  {
+    "step": 1000,
+    "svamp_acc": 38.0,
+    "truthfulqa_acc": 39.5
+  },
+  {
+    "step": 2500,
+    "svamp_acc": 32.0,
+    "truthfulqa_acc": 55.0
+  },
+  {
+    "step": 4000,
+    "svamp_acc": 35.5,
+    "truthfulqa_acc": 51.5
+  },
+  {
+    "step": 5500,
+    "svamp_acc": 39.5,
+    "truthfulqa_acc": 49.0
+  },
+  {
+    "step": 7000,
+    "svamp_acc": 35.0,
+    "truthfulqa_acc": 55.5
+  }
+]

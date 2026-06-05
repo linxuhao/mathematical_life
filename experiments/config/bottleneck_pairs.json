@@ -1,0 +1,31 @@
+[
+  {"a": "activations_v3/Qwen3.5-0.8B-base_L12_reasoning.npy", "b": "activations_v3/Qwen3.5-0.8B-base_L12_control.npy", "label_a": "Qwen3.5-0.8B-base-R", "label_b": "Qwen3.5-0.8B-base-C"},
+  {"a": "activations_v3/Qwen3.5-0.8B-base_L12_reasoning.npy", "b": "activations_v3/Qwen3.5-0.8B-base_L12_hallucination.npy", "label_a": "Qwen3.5-0.8B-base-R", "label_b": "Qwen3.5-0.8B-base-H"},
+  {"a": "activations_v3/Qwen3.5-0.8B-base_L12_control.npy", "b": "activations_v3/Qwen3.5-0.8B-base_L12_hallucination.npy", "label_a": "Qwen3.5-0.8B-base-C", "label_b": "Qwen3.5-0.8B-base-H"},
+  {"a": "activations_v3/Qwen3.5-0.8B-Inst_L12_reasoning.npy", "b": "activations_v3/Qwen3.5-0.8B-Inst_L12_control.npy", "label_a": "Qwen3.5-0.8B-Inst-R", "label_b": "Qwen3.5-0.8B-Inst-C"},
+  {"a": "activations_v3/Qwen3.5-0.8B-Inst_L12_reasoning.npy", "b": "activations_v3/Qwen3.5-0.8B-Inst_L12_hallucination.npy", "label_a": "Qwen3.5-0.8B-Inst-R", "label_b": "Qwen3.5-0.8B-Inst-H"},
+  {"a": "activations_v3/Qwen3.5-0.8B-Inst_L12_control.npy", "b": "activations_v3/Qwen3.5-0.8B-Inst_L12_hallucination.npy", "label_a": "Qwen3.5-0.8B-Inst-C", "label_b": "Qwen3.5-0.8B-Inst-H"},
+
+  {"a": "activations_v3/Qwen3.5-2B-base_L14_reasoning.npy", "b": "activations_v3/Qwen3.5-2B-base_L14_control.npy", "label_a": "Qwen3.5-2B-base-R", "label_b": "Qwen3.5-2B-base-C"},
+  {"a": "activations_v3/Qwen3.5-2B-base_L14_reasoning.npy", "b": "activations_v3/Qwen3.5-2B-base_L14_hallucination.npy", "label_a": "Qwen3.5-2B-base-R", "label_b": "Qwen3.5-2B-base-H"},
+  {"a": "activations_v3/Qwen3.5-2B-Inst_L14_reasoning.npy", "b": "activations_v3/Qwen3.5-2B-Inst_L14_hallucination.npy", "label_a": "Qwen3.5-2B-Inst-R", "label_b": "Qwen3.5-2B-Inst-H"},
+
+  {"a": "activations_v3/Qwen3.5-4B-base_L18_reasoning.npy", "b": "activations_v3/Qwen3.5-4B-base_L18_control.npy", "label_a": "Qwen3.5-4B-base-R", "label_b": "Qwen3.5-4B-base-C"},
+  {"a": "activations_v3/Qwen3.5-4B-base_L18_reasoning.npy", "b": "activations_v3/Qwen3.5-4B-base_L18_hallucination.npy", "label_a": "Qwen3.5-4B-base-R", "label_b": "Qwen3.5-4B-base-H"},
+  {"a": "activations_v3/Qwen3.5-4B-Inst_L18_reasoning.npy", "b": "activations_v3/Qwen3.5-4B-Inst_L18_hallucination.npy", "label_a": "Qwen3.5-4B-Inst-R", "label_b": "Qwen3.5-4B-Inst-H"},
+
+  {"a": "activations_v3/Qwen3.5-9B-base_L20_reasoning.npy", "b": "activations_v3/Qwen3.5-9B-base_L20_control.npy", "label_a": "Qwen3.5-9B-base-R", "label_b": "Qwen3.5-9B-base-C"},
+  {"a": "activations_v3/Qwen3.5-9B-base_L20_reasoning.npy", "b": "activations_v3/Qwen3.5-9B-base_L20_hallucination.npy", "label_a": "Qwen3.5-9B-base-R", "label_b": "Qwen3.5-9B-base-H"},
+  {"a": "activations_v3/Qwen3.5-9B-Inst_L20_reasoning.npy", "b": "activations_v3/Qwen3.5-9B-Inst_L20_hallucination.npy", "label_a": "Qwen3.5-9B-Inst-R", "label_b": "Qwen3.5-9B-Inst-H"},
+
+  {"a": "activations_v3/Qwen3-8B-base_L18_reasoning.npy", "b": "activations_v3/Qwen3-8B-base_L18_control.npy", "label_a": "Qwen3-8B-base-R", "label_b": "Qwen3-8B-base-C"},
+  {"a": "activations_v3/Qwen2.5-0.5B-base_L12_reasoning.npy", "b": "activations_v3/Qwen2.5-0.5B-base_L12_hallucination.npy", "label_a": "Qwen2.5-0.5B-base-R", "label_b": "Qwen2.5-0.5B-base-H"},
+  {"a": "activations_v3/Qwen2.5-0.5B-Inst_L12_reasoning.npy", "b": "activations_v3/Qwen2.5-0.5B-Inst_L12_hallucination.npy", "label_a": "Qwen2.5-0.5B-Inst-R", "label_b": "Qwen2.5-0.5B-Inst-H"},
+
+  {"a": "activations_v3/Qwen3.5-0.8B-base_L12_reasoning.npy", "b": "activations_v3/Qwen3.5-0.8B-Inst_L12_reasoning.npy", "label_a": "Qwen3.5-0.8B-base-R", "label_b": "Qwen3.5-0.8B-Inst-R"},
+  {"a": "activations_v3/Qwen3.5-4B-base_L18_reasoning.npy", "b": "activations_v3/Qwen3.5-4B-Inst_L18_reasoning.npy", "label_a": "Qwen3.5-4B-base-R", "label_b": "Qwen3.5-4B-Inst-R"},
+  {"a": "activations_v3/Qwen3.5-9B-base_L20_reasoning.npy", "b": "activations_v3/Qwen3.5-9B-Inst_L20_reasoning.npy", "label_a": "Qwen3.5-9B-base-R", "label_b": "Qwen3.5-9B-Inst-R"},
+  {"a": "activations_v3/Qwen2.5-0.5B-base_L12_reasoning.npy", "b": "activations_v3/Qwen2.5-0.5B-Inst_L12_reasoning.npy", "label_a": "Qwen2.5-0.5B-base-R", "label_b": "Qwen2.5-0.5B-Inst-R"},
+  {"a": "activations_v3/Qwen2.5-3B-base_L18_reasoning.npy", "b": "activations_v3/Qwen2.5-3B-Inst_L18_reasoning.npy", "label_a": "Qwen2.5-3B-base-R", "label_b": "Qwen2.5-3B-Inst-R"},
+  {"a": "activations_v3/Qwen3-8B-base_L18_reasoning.npy", "b": "activations_v3/Qwen3-8B-Inst_L18_reasoning.npy", "label_a": "Qwen3-8B-base-R", "label_b": "Qwen3-8B-Inst-R"}
+]

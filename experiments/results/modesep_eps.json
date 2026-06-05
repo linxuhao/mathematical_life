@@ -1,0 +1,1366 @@
+{
+ "Gemma4-E2B-base_L17": {
+  "0.01": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -2.5
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -12.9
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -78.6
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -228.6
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen2.5-0.5B-Inst_L12": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 70.8
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 62.3
+  },
+  "0.03": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 39.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -25.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen2.5-0.5B-base_L12": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 72.1
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 65.5
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -40.9
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -100.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen2.5-3B-Inst_L18": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 65.8
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 22.3
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -120.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -300.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen2.5-3B-base_L18": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 66.7
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 47.2
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -23.1
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -100.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3-0.6B-Inst_L14": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 60.4
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 51.0
+  },
+  "0.03": {
+   "verdict": "SHARED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 69.6
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -400.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3-0.6B-base_L14": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 65.4
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 61.7
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 25.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3-1.7B-Inst_L14": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 58.8
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 47.6
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 5.3
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -700.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3-1.7B-base_L14": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 69.9
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 65.3
+  },
+  "0.03": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 59.4
+  },
+  "0.05": {
+   "verdict": "SHARED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 133.3
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3-4B-Inst_L18": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 50.3
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 35.7
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -120.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3-4B-base_L18": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 67.5
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 51.9
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -8.7
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3-8B-Inst_L18": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 45.5
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 30.4
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -66.7
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3-8B-base_L18": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 49.4
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 26.2
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.05": {
+   "verdict": "SHARED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 100.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3.5-0.8B-Inst_L12": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 68.2
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 54.7
+  },
+  "0.03": {
+   "verdict": "SHARED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 42.5
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -200.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3.5-0.8B-base_L12": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 70.0
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 64.5
+  },
+  "0.03": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 41.2
+  },
+  "0.05": {
+   "verdict": "SHARED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 60.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3.5-2B-Inst_L14": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 65.4
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 57.0
+  },
+  "0.03": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 65.5
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3.5-2B-base_L14": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 66.5
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 61.1
+  },
+  "0.03": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 63.6
+  },
+  "0.05": {
+   "verdict": "SHARED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 66.7
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3.5-4B-Inst_L18": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 54.6
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 41.5
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 27.8
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 18.8
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3.5-4B-base_L18": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 65.7
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 33.8
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 13.1
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -150.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3.5-9B-Inst_L20": {
+  "0.01": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 16.4
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -40.9
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -66.7
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen3.5-9B-base_L20": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 54.1
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 26.6
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -35.3
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -225.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen__Qwen2.5-0.5B-Instruct_L10": {
+  "0.01": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -0.8
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -68.8
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -100.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen__Qwen2.5-0.5B-Instruct_L15": {
+  "0.01": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -15.7
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -150.0
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen__Qwen2.5-0.5B-Instruct_L20": {
+  "0.01": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 26.0
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 75.0
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen__Qwen2.5-0.5B-Instruct_L5": {
+  "0.01": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -34.8
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -40.0
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen__Qwen2.5-0.5B_L10": {
+  "0.01": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -5.6
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -109.5
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen__Qwen2.5-0.5B_L15": {
+  "0.01": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -2.2
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -19.0
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -200.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen__Qwen2.5-0.5B_L20": {
+  "0.01": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 11.9
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -25.0
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "Qwen__Qwen2.5-0.5B_L5": {
+  "0.01": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -1.7
+  },
+  "0.02": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -100.0
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "SmolLM2-1.7B-Inst_L12": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 64.6
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 51.2
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -153.3
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -500.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ },
+ "SmolLM2-1.7B-base_L12": {
+  "0.01": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 69.4
+  },
+  "0.02": {
+   "verdict": "MIXED",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 44.6
+  },
+  "0.03": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -17.1
+  },
+  "0.05": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": -25.0
+  },
+  "0.08": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  },
+  "0.1": {
+   "verdict": "SEPARATE",
+   "A": null,
+   "B": null,
+   "U": null,
+   "overlap_pct": 0.0
+  }
+ }
+}

@@ -1,0 +1,669 @@
+{
+  "Gemma4-E2B-base": {
+    "A_beta1": 25,
+    "B_beta1": 16,
+    "U_beta1": 43,
+    "sum": 41,
+    "intersection": -2,
+    "overlap_pct": -8.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 2.8128,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.2,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 50,
+        "B": 31,
+        "U": 84,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 2,
+        "B": 5,
+        "U": 8,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen2.5-0.5B-Inst": {
+    "A_beta1": 21,
+    "B_beta1": 17,
+    "U_beta1": 38,
+    "sum": 38,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.0687,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.2,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 35,
+        "B": 30,
+        "U": 65,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 2,
+        "B": 7,
+        "U": 9,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen2.5-0.5B-base": {
+    "A_beta1": 9,
+    "B_beta1": 12,
+    "U_beta1": 21,
+    "sum": 21,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.0747,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.3,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 32,
+        "B": 27,
+        "U": 59,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 2,
+        "U": 2,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen2.5-3B-Inst": {
+    "A_beta1": 25,
+    "B_beta1": 13,
+    "U_beta1": 38,
+    "sum": 38,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.2265,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.2,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 53,
+        "B": 26,
+        "U": 79,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 6,
+        "B": 2,
+        "U": 8,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen2.5-3B-base": {
+    "A_beta1": 13,
+    "B_beta1": 18,
+    "U_beta1": 31,
+    "sum": 31,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.2437,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.2,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 28,
+        "B": 45,
+        "U": 73,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 3,
+        "B": 2,
+        "U": 5,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3-0.6B-Inst": {
+    "A_beta1": 3,
+    "B_beta1": 44,
+    "U_beta1": 47,
+    "sum": 47,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.2202,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.2,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 13,
+        "B": 62,
+        "U": 75,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 16,
+        "U": 16,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3-0.6B-base": {
+    "A_beta1": 6,
+    "B_beta1": 22,
+    "U_beta1": 28,
+    "sum": 28,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.1803,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.2,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 31,
+        "B": 46,
+        "U": 77,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 5,
+        "U": 5,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3-1.7B-Inst": {
+    "A_beta1": 10,
+    "B_beta1": 45,
+    "U_beta1": 55,
+    "sum": 55,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.6141,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.4,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 34,
+        "B": 69,
+        "U": 103,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 1,
+        "B": 15,
+        "U": 16,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3-1.7B-base": {
+    "A_beta1": 5,
+    "B_beta1": 15,
+    "U_beta1": 20,
+    "sum": 20,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.7824,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.1,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 21,
+        "B": 38,
+        "U": 59,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 2,
+        "U": 2,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3-4B-Inst": {
+    "A_beta1": 1,
+    "B_beta1": 3,
+    "U_beta1": 4,
+    "sum": 4,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.5673,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.3,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 7,
+        "B": 15,
+        "U": 22,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 0,
+        "U": 0,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3-4B-base": {
+    "A_beta1": 5,
+    "B_beta1": 23,
+    "U_beta1": 28,
+    "sum": 28,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.2467,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.4,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 23,
+        "B": 44,
+        "U": 67,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 4,
+        "U": 4,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3-8B-Inst": {
+    "A_beta1": 1,
+    "B_beta1": 8,
+    "U_beta1": 9,
+    "sum": 9,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 1.0581,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.6,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 5,
+        "B": 28,
+        "U": 33,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 0,
+        "U": 0,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3-8B-base": {
+    "A_beta1": 12,
+    "B_beta1": 11,
+    "U_beta1": 23,
+    "sum": 23,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.529,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.4,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 30,
+        "B": 20,
+        "U": 50,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 1,
+        "U": 1,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3.5-0.8B-Inst": {
+    "A_beta1": 2,
+    "B_beta1": 9,
+    "U_beta1": 11,
+    "sum": 11,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.0201,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.4,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 8,
+        "B": 29,
+        "U": 37,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 1,
+        "U": 1,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3.5-0.8B-base": {
+    "A_beta1": 10,
+    "B_beta1": 32,
+    "U_beta1": 42,
+    "sum": 42,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.0112,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.3,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 37,
+        "B": 68,
+        "U": 105,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 1,
+        "B": 6,
+        "U": 7,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3.5-2B-Inst": {
+    "A_beta1": 12,
+    "B_beta1": 13,
+    "U_beta1": 25,
+    "sum": 25,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.1578,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.3,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 37,
+        "B": 38,
+        "U": 75,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 1,
+        "U": 1,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3.5-2B-base": {
+    "A_beta1": 6,
+    "B_beta1": 13,
+    "U_beta1": 19,
+    "sum": 19,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.0651,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.5,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 20,
+        "B": 42,
+        "U": 62,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 0,
+        "U": 0,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3.5-4B-Inst": {
+    "A_beta1": 14,
+    "B_beta1": 14,
+    "U_beta1": 28,
+    "sum": 28,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.2804,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.5,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 36,
+        "B": 29,
+        "U": 65,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 2,
+        "U": 2,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3.5-4B-base": {
+    "A_beta1": 7,
+    "B_beta1": 5,
+    "U_beta1": 12,
+    "sum": 12,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.1076,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.6,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 26,
+        "B": 25,
+        "U": 51,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 1,
+        "B": 0,
+        "U": 1,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3.5-9B-Inst": {
+    "A_beta1": 17,
+    "B_beta1": 15,
+    "U_beta1": 32,
+    "sum": 32,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 1.2353,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.8,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 43,
+        "B": 32,
+        "U": 75,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 3,
+        "B": 5,
+        "U": 8,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "Qwen3.5-9B-base": {
+    "A_beta1": 2,
+    "B_beta1": 1,
+    "U_beta1": 3,
+    "sum": 3,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 0.6383,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.7,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 14,
+        "B": 7,
+        "U": 21,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 1,
+        "U": 1,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "SmolLM2-1.7B-Inst": {
+    "A_beta1": 15,
+    "B_beta1": 15,
+    "U_beta1": 30,
+    "sum": 30,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 1.1052,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.3,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 37,
+        "B": 26,
+        "U": 63,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 0,
+        "B": 6,
+        "U": 6,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  },
+  "SmolLM2-1.7B-base": {
+    "A_beta1": 14,
+    "B_beta1": 17,
+    "U_beta1": 31,
+    "sum": 31,
+    "intersection": 0,
+    "overlap_pct": 0.0,
+    "verdict": "SEPARATE",
+    "eps_pred_ref": 1.0309,
+    "n_A": 250,
+    "n_B": 250,
+    "n_U": 500,
+    "time_s": 0.3,
+    "boundary_checks": {
+      "eps_0.02": {
+        "A": 30,
+        "B": 42,
+        "U": 72,
+        "verdict": "SEPARATE"
+      },
+      "eps_0.05": {
+        "A": 3,
+        "B": 3,
+        "U": 6,
+        "verdict": "SEPARATE"
+      }
+    },
+    "stable": true
+  }
+}
