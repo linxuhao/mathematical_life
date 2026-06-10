@@ -21,7 +21,15 @@ from scipy.stats import wilcoxon, pearsonr
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "results" / "C3_sameq_v2.json"
 ACTS = ROOT / "results" / "sameq_acts"
-KS = [128, 192, 256]
+KS_PRIMARY = [128, 192, 256]   # pre-registered: errors in the 6-pair set occurred
+                               # at 47-84% of trajectories (tokens 130-277), so the
+                               # pre-error window the precursor hypothesis targets
+                               # is covered by these ks
+KS_EXTRA = [384]               # exploratory only: conditioning on n_gen>=384 selects
+                               # long (within-question error-prone) trajectories
+KS = KS_PRIMARY + KS_EXTRA
+MAXNEW = 1024                  # capped trajectories carry truncation-corrupted labels
+                               # (the v1-pilot failure mode) and are EXCLUDED
 
 def beta1(cloud):
     from sklearn.metrics import pairwise_distances
@@ -40,6 +48,8 @@ for f in sorted(ACTS.glob("q*.npz"), key=lambda p: int(p.stem[1:])):
         if f"s{si}" not in z:
             continue
         h = z[f"s{si}"].astype(np.float32)
+        if len(h) >= MAXNEW:   # capped: never reached EOS, label unreliable
+            continue
         row = {"qid": key, "si": si, "correct": bool(z[f"s{si}_correct"]),
                "n_gen": len(h), "b1": {}}
         for k in KS:
@@ -135,8 +145,8 @@ try:
 except Exception as e:
     print("anchor failed:", e)
 
-# pre-registered verdict on filtered matched-k AUCs
-ks_auc = [report[str(k)]["auc_filt"] for k in KS if str(k) in report]
+# pre-registered verdict on filtered matched-k AUCs (PRIMARY ks only)
+ks_auc = [report[str(k)]["auc_filt"] for k in KS_PRIMARY if str(k) in report]
 if ks_auc:
     if all(a >= 0.60 for a in ks_auc):
         verdict = "PRECURSOR SIGNAL REAL (>=0.60 sustained)"
