@@ -378,8 +378,12 @@ $\beta_1$ of single reasoning trajectories \emph{on activations} ($n=1319$), fou
 $\beta_1$--length covariation they leave uncontrolled ($r=0.31$--$0.58$), and---unlike them---controlled
 for it, at which point the topology--correctness signal vanished (partial $r=+0.04$). The routing
 trajectory test (\S\ref{sec:routing-test}) reproduces this under a within-question length control.
-Trajectory-topology positives in this genre \citep{reasoningTrajectories2604} likewise report no
-length or difficulty control. We do not claim Tan et al.\ are wrong on their own target; we claim the
+Among other trajectory-level positives in this genre, \citet{reasoningTrajectories2604} in fact
+\emph{passes} a length-balanced check (its predictive AUC is essentially unchanged under
+length-balanced resampling, against a step-count-only baseline of $0.65$)---but its features are
+linear step-representation geometry, not persistent homology, so the signal that \emph{survives}
+length control is precisely the non-topological kind, consistent with our conclusion throughout;
+a within-question difficulty control remains absent there. We do not claim Tan et al.\ are wrong on their own target; we claim the
 result does not transfer to the activation-manifold capacity reading our ontology requires, and that
 the length covariation which fully explained the analogous signal on \emph{our} substrate remains
 uncontrolled---and unexamined---on theirs.
