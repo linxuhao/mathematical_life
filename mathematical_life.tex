@@ -365,9 +365,14 @@ solution. Ours is the distribution of \emph{hidden activations across many promp
 per-model, against benchmark capability. These are orthogonal quantities---the shape of one reasoning
 \emph{trajectory} through semantic space versus the shape of the activation \emph{distribution}---so
 there is no genuine contradiction. More to the point, their analysis does not control trace length:
-the cloud size \emph{equals} the number of reasoning steps, their topological features (H$_0$/H$_1$
-counts, total persistence) grow with that count, and the alignment-score target also covaries with
-length---so the reported variance is consistent with an uncontrolled length confound. The direct
+the cloud size \emph{equals} the number of reasoning steps, several of their topological features
+(H$_0$/H$_1$ counts, total persistence) grow mechanically with that count, and no length baseline
+or length-stratified analysis is reported---so whether their predictive variance survives a
+trace-length control is an open question their data could answer. In fairness, their target is
+partially insulated by design (the \emph{mean} cosine similarity of matched step pairs, not a raw
+alignment total), and their feature set includes count-insensitive summaries (mean life,
+persistence entropy), so on their substrate the confound is \emph{unexamined} rather than
+established. The direct
 analog of their object within our framework is the intra-trace test reported just above: we computed
 $\beta_1$ of single reasoning trajectories \emph{on activations} ($n=1319$), found the same
 $\beta_1$--length covariation they leave uncontrolled ($r=0.31$--$0.58$), and---unlike them---controlled
@@ -376,7 +381,8 @@ trajectory test (\S\ref{sec:routing-test}) reproduces this under a within-questi
 Trajectory-topology positives in this genre \citep{reasoningTrajectories2604} likewise report no
 length or difficulty control. We do not claim Tan et al.\ are wrong on their own target; we claim the
 result does not transfer to the activation-manifold capacity reading our ontology requires, and that
-its most likely basis---trajectory length---is one we control and they do not.
+the length covariation which fully explained the analogous signal on \emph{our} substrate remains
+uncontrolled---and unexamined---on theirs.
 
 \subsection{Prediction~2 is falsified: topological collapse is a bystander, not a mechanism}
 \label{sec:empirical-p2}
