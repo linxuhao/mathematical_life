@@ -1,6 +1,8 @@
 import json, numpy as np
-txt = json.load(open("/tmp/tw_text.json"))
-cur = json.load(open("/tmp/aha_curves.json"))
+from pathlib import Path
+ROOT = Path(__file__).resolve().parent.parent
+txt = json.load(open(ROOT / "results" / "tokenwise_v2_text.json"))
+cur = json.load(open(ROOT / "results" / "aha_curves.json"))
 
 # critical-error onset markers (substring where the error begins). Reasoning before
 # this point is correct; the error is introduced at/after it.

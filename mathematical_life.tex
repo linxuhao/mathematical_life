@@ -347,13 +347,15 @@ predicts that trace's correctness. Naively it appears to, in the \emph{inverted}
 $0.41$)---but the trajectory $\beta_1$ is in effect a token counter ($r = 0.95$ with trajectory
 length), and incorrect traces simply run longer ($436$ vs.\ $375$ tokens on average). Controlling
 length then exposes a second confound rather than a signal: a length-controlled residual remains
-(partial $r = +0.18$, $p<.001$; AUC $\approx 0.63$ at matched token count), but an error-aligned
-reading of six length-matched correct/incorrect pairs shows the $\beta_1$ gap is \emph{already present
-before the first reasoning error} and does not change at error onset---it reflects which
-\emph{problem} is being solved, not whether the reasoning is going right---and the powered
-within-question test (same problem, multiple sampled solutions; \S\ref{sec:routing-test}) confirms
-this: with question identity and completion length both controlled, the trajectory signal is at
-chance (AUC $0.48$). The intra-trace topological signal thus decomposes exactly into the two
+(partial $r = +0.18$, $p<.001$; AUC $\approx 0.63$ at matched token count), but two further checks
+dissolve it. An error-aligned reading of six length-matched correct/incorrect pairs shows the
+$\beta_1$ gap is \emph{already present before the first reasoning error} and does not change at
+error onset---so the residual is not a \emph{consequence} of reasoning going wrong. That leaves two
+candidate sources: the identity of the problem being solved, or an attempt-level early-warning
+signal carried by the hidden state. The powered within-question test (same problem, multiple
+sampled solutions; \S\ref{sec:routing-test}) adjudicates between them: an early-warning signal
+would survive question centering, but with question identity and completion length both controlled
+the trajectory signal is at chance (AUC $0.48$)---leaving problem identity. The intra-trace topological signal thus decomposes exactly into the two
 confounds this paper keeps finding---length, then difficulty/problem identity---with nothing left
 over. (An earlier $1{,}319$-trajectory pilot of this test, generated under a $256$-token cap, is
 excluded: $94\%$ of its trajectories were truncated, so its ``correctness'' labels largely measured
