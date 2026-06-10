@@ -1,0 +1,384 @@
+{
+ "within_family": [
+  {
+   "raw": 0.3161,
+   "filtered": 0.3161,
+   "raw_norm": 1.2397,
+   "filt_norm": 1.2397,
+   "family": "Qwen3.5-base",
+   "a": "Qwen3.5-0.8B-base",
+   "b": "Qwen3.5-2B-base",
+   "size_a": 0.8,
+   "size_b": 2,
+   "pair_scale": 1.26
+  },
+  {
+   "raw": 0.4311,
+   "filtered": 0.4311,
+   "raw_norm": 1.1124,
+   "filt_norm": 1.1124,
+   "family": "Qwen3.5-base",
+   "a": "Qwen3.5-0.8B-base",
+   "b": "Qwen3.5-4B-base",
+   "size_a": 0.8,
+   "size_b": 4,
+   "pair_scale": 1.79
+  },
+  {
+   "raw": 1.6266,
+   "filtered": 1.6266,
+   "raw_norm": 0.9259,
+   "filt_norm": 0.9259,
+   "family": "Qwen3.5-base",
+   "a": "Qwen3.5-0.8B-base",
+   "b": "Qwen3.5-9B-base",
+   "size_a": 0.8,
+   "size_b": 9,
+   "pair_scale": 2.68
+  },
+  {
+   "raw": 0.4311,
+   "filtered": 0.4311,
+   "raw_norm": 1.1124,
+   "filt_norm": 1.1124,
+   "family": "Qwen3.5-base",
+   "a": "Qwen3.5-2B-base",
+   "b": "Qwen3.5-4B-base",
+   "size_a": 2,
+   "size_b": 4,
+   "pair_scale": 2.83
+  },
+  {
+   "raw": 1.6266,
+   "filtered": 1.6266,
+   "raw_norm": 0.9259,
+   "filt_norm": 0.9259,
+   "family": "Qwen3.5-base",
+   "a": "Qwen3.5-2B-base",
+   "b": "Qwen3.5-9B-base",
+   "size_a": 2,
+   "size_b": 9,
+   "pair_scale": 4.24
+  },
+  {
+   "raw": 1.6266,
+   "filtered": 1.6266,
+   "raw_norm": 0.9259,
+   "filt_norm": 0.9259,
+   "family": "Qwen3.5-base",
+   "a": "Qwen3.5-4B-base",
+   "b": "Qwen3.5-9B-base",
+   "size_a": 4,
+   "size_b": 9,
+   "pair_scale": 6.0
+  },
+  {
+   "raw": 0.3848,
+   "filtered": 0.3848,
+   "raw_norm": 1.2808,
+   "filt_norm": 1.2808,
+   "family": "Qwen3.5-Inst",
+   "a": "Qwen3.5-0.8B-Inst",
+   "b": "Qwen3.5-2B-Inst",
+   "size_a": 0.8,
+   "size_b": 2,
+   "pair_scale": 1.26
+  },
+  {
+   "raw": 0.5249,
+   "filtered": 0.5249,
+   "raw_norm": 1.2059,
+   "filt_norm": 1.2059,
+   "family": "Qwen3.5-Inst",
+   "a": "Qwen3.5-0.8B-Inst",
+   "b": "Qwen3.5-4B-Inst",
+   "size_a": 0.8,
+   "size_b": 4,
+   "pair_scale": 1.79
+  },
+  {
+   "raw": 1.0294,
+   "filtered": 1.0294,
+   "raw_norm": 0.5611,
+   "filt_norm": 0.5611,
+   "family": "Qwen3.5-Inst",
+   "a": "Qwen3.5-0.8B-Inst",
+   "b": "Qwen3.5-9B-Inst",
+   "size_a": 0.8,
+   "size_b": 9,
+   "pair_scale": 2.68
+  },
+  {
+   "raw": 0.5249,
+   "filtered": 0.5249,
+   "raw_norm": 1.2059,
+   "filt_norm": 1.2059,
+   "family": "Qwen3.5-Inst",
+   "a": "Qwen3.5-2B-Inst",
+   "b": "Qwen3.5-4B-Inst",
+   "size_a": 2,
+   "size_b": 4,
+   "pair_scale": 2.83
+  },
+  {
+   "raw": 1.0294,
+   "filtered": 1.0294,
+   "raw_norm": 0.5611,
+   "filt_norm": 0.5611,
+   "family": "Qwen3.5-Inst",
+   "a": "Qwen3.5-2B-Inst",
+   "b": "Qwen3.5-9B-Inst",
+   "size_a": 2,
+   "size_b": 9,
+   "pair_scale": 4.24
+  },
+  {
+   "raw": 1.0294,
+   "filtered": 1.0294,
+   "raw_norm": 0.5611,
+   "filt_norm": 0.5611,
+   "family": "Qwen3.5-Inst",
+   "a": "Qwen3.5-4B-Inst",
+   "b": "Qwen3.5-9B-Inst",
+   "size_a": 4,
+   "size_b": 9,
+   "pair_scale": 6.0
+  },
+  {
+   "raw": 3.8684,
+   "filtered": 3.8684,
+   "raw_norm": 1.0644,
+   "filt_norm": 1.0644,
+   "family": "Qwen3-base",
+   "a": "Qwen3-0.6B-base",
+   "b": "Qwen3-1.7B-base",
+   "size_a": 0.6,
+   "size_b": 1.7,
+   "pair_scale": 1.01
+  },
+  {
+   "raw": 0.781,
+   "filtered": 0.8632,
+   "raw_norm": 0.6554,
+   "filt_norm": 0.7245,
+   "family": "Qwen3-base",
+   "a": "Qwen3-0.6B-base",
+   "b": "Qwen3-4B-base",
+   "size_a": 0.6,
+   "size_b": 4,
+   "pair_scale": 1.55
+  },
+  {
+   "raw": 2.1183,
+   "filtered": 2.1183,
+   "raw_norm": 0.8675,
+   "filt_norm": 0.8675,
+   "family": "Qwen3-base",
+   "a": "Qwen3-0.6B-base",
+   "b": "Qwen3-8B-base",
+   "size_a": 0.6,
+   "size_b": 8,
+   "pair_scale": 2.19
+  },
+  {
+   "raw": 3.8684,
+   "filtered": 3.8684,
+   "raw_norm": 1.0644,
+   "filt_norm": 1.0644,
+   "family": "Qwen3-base",
+   "a": "Qwen3-1.7B-base",
+   "b": "Qwen3-4B-base",
+   "size_a": 1.7,
+   "size_b": 4,
+   "pair_scale": 2.61
+  },
+  {
+   "raw": 3.8684,
+   "filtered": 3.8684,
+   "raw_norm": 1.0644,
+   "filt_norm": 1.0644,
+   "family": "Qwen3-base",
+   "a": "Qwen3-1.7B-base",
+   "b": "Qwen3-8B-base",
+   "size_a": 1.7,
+   "size_b": 8,
+   "pair_scale": 3.69
+  },
+  {
+   "raw": 2.1183,
+   "filtered": 2.1183,
+   "raw_norm": 0.8675,
+   "filt_norm": 0.8675,
+   "family": "Qwen3-base",
+   "a": "Qwen3-4B-base",
+   "b": "Qwen3-8B-base",
+   "size_a": 4,
+   "size_b": 8,
+   "pair_scale": 5.66
+  },
+  {
+   "raw": 2.0053,
+   "filtered": 2.0053,
+   "raw_norm": 0.8363,
+   "filt_norm": 0.8363,
+   "family": "Qwen3-Inst",
+   "a": "Qwen3-0.6B-Inst",
+   "b": "Qwen3-1.7B-Inst",
+   "size_a": 0.6,
+   "size_b": 1.7,
+   "pair_scale": 1.01
+  },
+  {
+   "raw": 0.4229,
+   "filtered": 0.5639,
+   "raw_norm": 0.5198,
+   "filt_norm": 0.6931,
+   "family": "Qwen3-Inst",
+   "a": "Qwen3-0.6B-Inst",
+   "b": "Qwen3-4B-Inst",
+   "size_a": 0.6,
+   "size_b": 4,
+   "pair_scale": 1.55
+  },
+  {
+   "raw": 0.9815,
+   "filtered": 0.9815,
+   "raw_norm": 0.7272,
+   "filt_norm": 0.7272,
+   "family": "Qwen3-Inst",
+   "a": "Qwen3-0.6B-Inst",
+   "b": "Qwen3-8B-Inst",
+   "size_a": 0.6,
+   "size_b": 8,
+   "pair_scale": 2.19
+  },
+  {
+   "raw": 2.0053,
+   "filtered": 2.0053,
+   "raw_norm": 0.8363,
+   "filt_norm": 0.8363,
+   "family": "Qwen3-Inst",
+   "a": "Qwen3-1.7B-Inst",
+   "b": "Qwen3-4B-Inst",
+   "size_a": 1.7,
+   "size_b": 4,
+   "pair_scale": 2.61
+  },
+  {
+   "raw": 2.0053,
+   "filtered": 2.0053,
+   "raw_norm": 0.8363,
+   "filt_norm": 0.8363,
+   "family": "Qwen3-Inst",
+   "a": "Qwen3-1.7B-Inst",
+   "b": "Qwen3-8B-Inst",
+   "size_a": 1.7,
+   "size_b": 8,
+   "pair_scale": 3.69
+  },
+  {
+   "raw": 0.9434,
+   "filtered": 0.9434,
+   "raw_norm": 0.699,
+   "filt_norm": 0.699,
+   "family": "Qwen3-Inst",
+   "a": "Qwen3-4B-Inst",
+   "b": "Qwen3-8B-Inst",
+   "size_a": 4,
+   "size_b": 8,
+   "pair_scale": 5.66
+  },
+  {
+   "raw": 1.3006,
+   "filtered": 1.3006,
+   "raw_norm": 0.9604,
+   "filt_norm": 0.9604,
+   "family": "Qwen2.5-base",
+   "a": "Qwen2.5-0.5B-base",
+   "b": "Qwen2.5-3B-base",
+   "size_a": 0.5,
+   "size_b": 3,
+   "pair_scale": 1.22
+  },
+  {
+   "raw": 0.7216,
+   "filtered": 0.7216,
+   "raw_norm": 0.8005,
+   "filt_norm": 0.8005,
+   "family": "Qwen2.5-Inst",
+   "a": "Qwen2.5-0.5B-Inst",
+   "b": "Qwen2.5-3B-Inst",
+   "size_a": 0.5,
+   "size_b": 3,
+   "pair_scale": 1.22
+  }
+ ],
+ "cross_family": [
+  {
+   "raw": 3.697,
+   "filtered": 4.2156,
+   "raw_norm": 0.7908,
+   "filt_norm": 0.9018,
+   "a": "Qwen3-1.7B-base",
+   "b": "SmolLM2-1.7B-base"
+  },
+  {
+   "raw": 1.4487,
+   "filtered": 1.7882,
+   "raw_norm": 0.5169,
+   "filt_norm": 0.638,
+   "a": "Qwen3-1.7B-Inst",
+   "b": "SmolLM2-1.7B-Inst"
+  },
+  {
+   "raw": 2.0747,
+   "filtered": 2.0747,
+   "raw_norm": 0.7402,
+   "filt_norm": 0.7402,
+   "a": "Qwen3.5-2B-Inst",
+   "b": "SmolLM2-1.7B-Inst"
+  },
+  {
+   "raw": 2.0053,
+   "filtered": 2.0053,
+   "raw_norm": 0.8363,
+   "filt_norm": 0.8363,
+   "a": "Qwen3.5-2B-Inst",
+   "b": "Qwen3-1.7B-Inst"
+  },
+  {
+   "raw": 0.876,
+   "filtered": 1.0294,
+   "raw_norm": 0.4775,
+   "filt_norm": 0.5611,
+   "a": "Qwen3.5-9B-Inst",
+   "b": "Qwen3-8B-Inst"
+  }
+ ],
+ "noise_floor": [
+  {
+   "raw": 0.0137,
+   "filtered": 0.0206,
+   "raw_norm": 0.3329,
+   "filt_norm": 0.5008,
+   "cloud": "Qwen3.5-0.8B-Inst",
+   "note": "90% subsample x2, same cloud"
+  },
+  {
+   "raw": 0.1322,
+   "filtered": 0.1798,
+   "raw_norm": 0.4399,
+   "filt_norm": 0.5984,
+   "cloud": "Qwen3.5-2B-Inst",
+   "note": "90% subsample x2, same cloud"
+  },
+  {
+   "raw": 0.8515,
+   "filtered": 1.0656,
+   "raw_norm": 0.4847,
+   "filt_norm": 0.6066,
+   "cloud": "Qwen3.5-9B-base",
+   "note": "90% subsample x2, same cloud"
+  }
+ ]
+}
