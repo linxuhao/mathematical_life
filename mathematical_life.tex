@@ -359,8 +359,11 @@ the trajectory-geometry signal is at chance (AUC $0.48$)---pointing to problem i
 dominant source. We flag the residual honestly: that test instruments trajectory geometry through
 route features rather than through cumulative $\beta_1$ itself, whose within-question version we
 have not run, and an endpoint-activation probe \emph{does} retain a weak within-question signal
-(AUC $0.58$)---so a small precursor component (the hidden state ``thinking wrong'' before the
-visible error) is disfavored by everything we measured, but not excluded. The intra-trace topological signal thus decomposes exactly into the two
+(AUC $0.58$); moreover both within-question numbers come from a batch with a high truncation rate
+whose labels are partly budget artifacts (see the audit footnote in \S\ref{sec:routing-test})---so
+a small precursor component (the hidden state ``thinking wrong'' before the visible error) is
+disfavored by everything we measured, but not excluded; a pre-registered clean re-test accompanies
+the repository. The intra-trace topological signal thus decomposes exactly into the two
 confounds this paper keeps finding---length, then difficulty/problem identity---with nothing left
 over. (An earlier $1{,}319$-trajectory pilot of this test, generated under a $256$-token cap, is
 excluded: $94\%$ of its trajectories were truncated, so its ``correctness'' labels largely measured
@@ -733,7 +736,17 @@ used the cleanest available control---\emph{within-question} comparison of multi
 to the \emph{same} problem (matched difficulty by construction; $97$ questions with both correct and
 incorrect traces). There the apparent ``shorter route $=$ correct'' signal (within-question
 $\mathrm{AUC}=0.69$) is \emph{entirely completion length}: completion length alone predicts at
-$\mathrm{AUC}=0.77$, and once it is controlled the route-efficiency signal vanishes ($\mathrm{AUC}=0.48$).
+$\mathrm{AUC}=0.77$, and once it is controlled the route-efficiency signal vanishes ($\mathrm{AUC}=0.48$).\footnote{A
+post-release audit of this same-question batch found it was generated under a $1024$-token budget
+which $59\%$ of its mixed-question completions exhausted; capped completions' correctness labels
+come from a last-number fallback and are partly truncation-driven. The length-controlled null is
+partially protected---truncation is itself a length artifact, and completion length is exactly the
+controlled variable---but label noise attenuates all AUCs toward chance, so the $0.48$, $0.69$,
+$0.77$, and the endpoint-probe $0.58$ of \S\ref{sec:empirical-p1} should be read with that caveat.
+A clean regeneration at a doubled budget, with the analysis and verdict rule pre-registered in the
+repository \emph{before} any data existed (\texttt{sameq\_b1\_gen/extract/analyze.py}),
+re-adjudicates these numbers together with the within-question cumulative-$\beta_1$ test; its
+results ship with the repository regardless of outcome.}
 This is the same difficulty/length confound that inflated the static correctness probes of
 \S\ref{sec:empirical-status}. Both Stage-1 observables---capacity (connectivity) and quality
 (geodesic efficiency)---are null under controls.

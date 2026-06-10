@@ -28,7 +28,7 @@ KS_PRIMARY = [128, 192, 256]   # pre-registered: errors in the 6-pair set occurr
 KS_EXTRA = [384]               # exploratory only: conditioning on n_gen>=384 selects
                                # long (within-question error-prone) trajectories
 KS = KS_PRIMARY + KS_EXTRA
-MAXNEW = 1024                  # capped trajectories carry truncation-corrupted labels
+MAXNEW = 2048                  # capped trajectories carry truncation-corrupted labels
                                # (the v1-pilot failure mode) and are EXCLUDED
 
 def beta1(cloud):
@@ -117,7 +117,9 @@ if len(sub) > 50:
     report["partial_full_b1_correct_given_ngen"] = {"r": float(pr), "p": float(pp)}
     print(f"\nfull-traj partial r(b1_filt, correct | n_gen, within-Q) = {pr:+.3f} (p={pp:.4f})")
 
-# anchor: dec_act PCA50 centered probe (B14 expects ~0.58)
+# anchor: dec_act PCA50 centered probe. B14 reported 0.58, but on labels where
+# 59% of mixed-Q completions hit the 1024 budget (truncation-driven labels);
+# this is the CLEAN re-measurement, not a replication target.
 try:
     from sklearn.decomposition import PCA
     from sklearn.model_selection import GroupKFold

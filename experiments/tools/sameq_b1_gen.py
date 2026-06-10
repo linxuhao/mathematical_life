@@ -21,7 +21,11 @@ import torch.nn.functional as F
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from datasets import load_dataset
 
-MODEL = "Qwen/Qwen3.5-2B"; N_Q = 150; K = 8; TEMP = 0.8; MAXNEW = 1024
+# MAXNEW=2048 (not B14's 1024): the old batch hit the 1024 budget on 40% of all
+# completions and 59% of mixed-question completions (temp-0.8 sampling rambles),
+# so its labels were partly truncation-driven. N_Q=200 for mixed-count buffer;
+# resumable — can stop once mixed questions >= ~80.
+MODEL = "Qwen/Qwen3.5-2B"; N_Q = 200; K = 8; TEMP = 0.8; MAXNEW = 2048
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "results" / "C3_sameq_v2.json"
 
