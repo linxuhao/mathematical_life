@@ -338,15 +338,26 @@ in \S\ref{sec:empirical-scope}: it falsifies the cavity-\emph{count} reading, no
 \emph{routing} reading, which our design does not test.
 
 \medskip
-\noindent\textbf{The null holds \emph{within} traces, too.} The result above is static---one cloud per
-model. We also ran the dynamic, \emph{intra-trace} version, which most directly matches the positive
-topological claims in the literature: for $1319$ reasoning trajectories we computed $\beta_1$ of each
-trajectory's token activations and asked whether it predicts that trace's correctness. It does not
-(AUC $0.47$; $r=-0.05$). The reason is diagnostic and recurs throughout this paper: the trajectory
-$\beta_1$ \emph{scales with trajectory length} (Pearson $r=0.31$ filtered, $0.58$ raw), and length
-itself predicts correctness (longer, more verbose traces are more often wrong; AUC $0.40$); once
-trajectory length is partialled out, $\beta_1$ carries no information about correctness
-(partial $r=+0.04$, $n.s.$). The apparent intra-trace topological signal \emph{is} the length confound.\footnote{Three further supplementary probes, released with the code, corroborate this section's nulls and none reverses them. (i) An \emph{aha-moment} test asks whether a single trajectory's $\beta_1$ distinguishes correct from incorrect reasoning; it does not (AUC $0.41$, $n=469$; \texttt{aha\_curves.json}), and the slight reverse direction is again the length confound, as incorrect traces run longer. (ii) A \emph{thermometer} validity test checks whether the topological gauges ($\beta_1$, survival rate, the structural index) track out-of-distribution (SVAMP, TruthfulQA) transfer across the released checkpoint series better than chance once training step is partialled out; they do not (\texttt{thermometer\_analysis.py}). (iii) A TruthfulQA diagnostic (\texttt{tqa\_diagnostic.py}) shows that an apparent benchmark drop is largely a letter-position output bias rather than a topological effect. We report these as additional robustness nulls, not headline results.}
+\noindent\textbf{The null holds \emph{within} traces, too---after two controls.} The result above is
+static---one cloud per model. We also ran the dynamic, \emph{intra-trace} version, which most directly
+matches the positive topological claims in the literature: for $469$ EOS-terminated reasoning
+trajectories (regenerated with a $1024$-token budget so truncation cannot corrupt correctness labels;
+accuracy $81\%$) we computed $\beta_1$ of each trajectory's token activations and asked whether it
+predicts that trace's correctness. Naively it appears to, in the \emph{inverted} direction (AUC
+$0.41$)---but the trajectory $\beta_1$ is in effect a token counter ($r = 0.95$ with trajectory
+length), and incorrect traces simply run longer ($436$ vs.\ $375$ tokens on average). Controlling
+length then exposes a second confound rather than a signal: a length-controlled residual remains
+(partial $r = +0.18$, $p<.001$; AUC $\approx 0.63$ at matched token count), but an error-aligned
+reading of six length-matched correct/incorrect pairs shows the $\beta_1$ gap is \emph{already present
+before the first reasoning error} and does not change at error onset---it reflects which
+\emph{problem} is being solved, not whether the reasoning is going right---and the powered
+within-question test (same problem, multiple sampled solutions; \S\ref{sec:routing-test}) confirms
+this: with question identity and completion length both controlled, the trajectory signal is at
+chance (AUC $0.48$). The intra-trace topological signal thus decomposes exactly into the two
+confounds this paper keeps finding---length, then difficulty/problem identity---with nothing left
+over. (An earlier $1{,}319$-trajectory pilot of this test, generated under a $256$-token cap, is
+excluded: $94\%$ of its trajectories were truncated, so its ``correctness'' labels largely measured
+fitting within the budget; we retain it only as the motivation for the clean regeneration.)\footnote{Three further supplementary probes, released with the code, corroborate this section's nulls and none reverses them. (i) An \emph{aha-moment} test asks whether the \emph{cumulative} $\beta_1(k)$ curve of a trajectory shows a localized jump marking the moment reasoning goes right or wrong; it does not (the largest single-step jump is statistically indistinguishable between correct and incorrect traces, $p = 0.16$; \texttt{aha\_curves.json}). (ii) A \emph{thermometer} validity test checks whether the topological gauges ($\beta_1$, survival rate, the structural index) track out-of-distribution (SVAMP, TruthfulQA) transfer across the released checkpoint series better than chance once training step is partialled out; they do not (\texttt{thermometer\_analysis.py}). (iii) A TruthfulQA diagnostic (\texttt{tqa\_diagnostic.py}) shows that an apparent benchmark drop is largely a letter-position output bias rather than a topological effect. We report these as additional robustness nulls, not headline results.}
 Two readings of this control must be kept apart. The negative length--correctness association here
 is \emph{observational}, under self-paced generation---a longer trace marks a model flailing on a
 bad path within its own sampling policy---and does not contradict the \emph{interventional} benefit
@@ -372,12 +383,16 @@ trace-length control is an open question their data could answer. In fairness, t
 partially insulated by design (the \emph{mean} cosine similarity of matched step pairs, not a raw
 alignment total), and their feature set includes count-insensitive summaries (mean life,
 persistence entropy), so on their substrate the confound is \emph{unexamined} rather than
-established. The direct
-analog of their object within our framework is the intra-trace test reported just above: we computed
-$\beta_1$ of single reasoning trajectories \emph{on activations} ($n=1319$), found the same
-$\beta_1$--length covariation they leave uncontrolled ($r=0.31$--$0.58$), and---unlike them---controlled
-for it, at which point the topology--correctness signal vanished (partial $r=+0.04$). The routing
-trajectory test (\S\ref{sec:routing-test}) reproduces this under a within-question length control.
+established. The nearest
+analog of their object within our framework is the intra-trace test reported just above---nearest,
+not identical: our points are token-level \emph{internal activations}, theirs are step-level
+\emph{external sentence embeddings}, so the comparison is two removes from theirs (granularity and
+representation), and our numbers do not transfer to their setup. With that caveat, the pattern we
+find is cautionary for any per-trace topological feature set: trajectory $\beta_1$ covaried with
+length far more strongly than anything their setup has been checked against ($r=0.95$), the naive
+signal inverted under a length control, and the length-controlled residual was then fully absorbed
+by question identity. Whether their step-level features behave the same way under those two controls
+is precisely the unexamined question above.
 Among other trajectory-level positives in this genre, \citet{reasoningTrajectories2604} in fact
 \emph{passes} a length-balanced check (its predictive AUC is essentially unchanged under
 length-balanced resampling, against a step-count-only baseline of $0.65$)---but its features are
@@ -385,8 +400,8 @@ linear step-representation geometry, not persistent homology, so the signal that
 length control is precisely the non-topological kind, consistent with our conclusion throughout;
 a within-question difficulty control remains absent there. We do not claim Tan et al.\ are wrong on their own target; we claim the
 result does not transfer to the activation-manifold capacity reading our ontology requires, and that
-the length covariation which fully explained the analogous signal on \emph{our} substrate remains
-uncontrolled---and unexamined---on theirs.
+the length-and-identity covariation which fully explained the analogous signal on \emph{our}
+substrate (token-level, two removes from theirs) remains unexamined on theirs.
 
 \subsection{Prediction~2 is falsified: topological collapse is a bystander, not a mechanism}
 \label{sec:empirical-p2}
