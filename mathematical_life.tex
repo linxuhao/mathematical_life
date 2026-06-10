@@ -347,6 +347,13 @@ $\beta_1$ \emph{scales with trajectory length} (Pearson $r=0.31$ filtered, $0.58
 itself predicts correctness (longer, more verbose traces are more often wrong; AUC $0.40$); once
 trajectory length is partialled out, $\beta_1$ carries no information about correctness
 (partial $r=+0.04$, $n.s.$). The apparent intra-trace topological signal \emph{is} the length confound.\footnote{Three further supplementary probes, released with the code, corroborate this section's nulls and none reverses them. (i) An \emph{aha-moment} test asks whether a single trajectory's $\beta_1$ distinguishes correct from incorrect reasoning; it does not (AUC $0.41$, $n=469$; \texttt{aha\_curves.json}), and the slight reverse direction is again the length confound, as incorrect traces run longer. (ii) A \emph{thermometer} validity test checks whether the topological gauges ($\beta_1$, survival rate, the structural index) track out-of-distribution (SVAMP, TruthfulQA) transfer across the released checkpoint series better than chance once training step is partialled out; they do not (\texttt{thermometer\_analysis.py}). (iii) A TruthfulQA diagnostic (\texttt{tqa\_diagnostic.py}) shows that an apparent benchmark drop is largely a letter-position output bias rather than a topological effect. We report these as additional robustness nulls, not headline results.}
+Two readings of this control must be kept apart. The negative length--correctness association here
+is \emph{observational}, under self-paced generation---a longer trace marks a model flailing on a
+bad path within its own sampling policy---and does not contradict the \emph{interventional} benefit
+of granting more reasoning budget (chain-of-thought prompting); we manipulate neither. And
+partialling out length asks whether $\beta_1$ is a non-trivial \emph{instrument}---whether it
+carries any information a token counter does not---a control that is valid under either causal
+reading of length itself.
 
 We note that the static and intra-trace nulls appear to contradict a positive result our framework had
 cited as preliminary support, and the reconciliation is instructive. \citet{Tan2025shape} report that topological features
@@ -416,11 +423,17 @@ low-dimensional \emph{conflict subspace} and is partially \emph{recoverable} by 
 training---a local, reversible account that is incompatible with both the ``global
 backpropagation hammer'' premise (\S\ref{sec:collapse}) and the irreversible ``topological
 death'' it predicts. Where a geometric signal \emph{does} track the off-target damage in our
-data, it is effective dimensionality (participation ratio) and output calibration, not homology;
-both are established correlates of forgetting (effective rank: \citet{Aghajanyan2021intrinsic}
-and the continual-learning rank literature \citep{erankCF}; calibration: \citep{calibrationCF}),
-and we claim neither as novel. The point for this paper is narrower and negative: the
-\emph{topological} variable our ontology privileges is not the one that carries the signal.
+data, it is effective dimensionality (participation ratio: partial correlation with off-target
+accuracy controlling for step $-0.83$ on ARC and $-0.84$ on HellaSwag, both $p<.01$) and output
+calibration, not homology; both are established correlates of forgetting (effective rank:
+\citet{Aghajanyan2021intrinsic} and the continual-learning rank literature \citep{erankCF};
+calibration: \citep{calibrationCF}), and we claim neither as novel. The participation-ratio result
+doubles as a \emph{positive control}: the same design, checkpoint count, and partial-correlation
+test that return $\approx 0$ for $\beta_1$ detect a strong signal, replicated on both domains, when
+a geometric variable genuinely carries one---so the $\beta_1$ null is not an artifact of low power
+or of the sensor noise quantified in \S\ref{sec:empirical-protocol}. The point for this paper is
+narrower and negative: the \emph{topological} variable our ontology privileges is not the one that
+carries the signal.
 In the language of causal mediation analysis \citep{Vig2020causal,MuellerMediator2024},
 Prediction~2 casts $\beta_1$ as the \emph{mediator} of forgetting---the variable through which
 gradient updates damage behavior---and the partial-correlation null estimates that indirect effect
@@ -473,9 +486,20 @@ monotonically with scale (Spearman $+1.00$), but this is an \emph{activation-mag
 normalized by $\varepsilon_{\max}$ (the cloud's own distance scale, which itself grows with model size)
 the ordering reverses to $-0.80$. No persistent-homology summary of the activation manifold---count at
 any threshold, raw count, or scale-normalized total persistence---positively tracks reasoning
-capability. The same sweep clarifies a choice made earlier: the $\beta_1$ count does not separate
-reasoning from hallucination at any threshold ($\beta_1^{R}\approx\beta_1^{H}$ throughout), which is why
-we report mode separation as \emph{positional} (centroid/bottleneck), where it \emph{is}
+capability. The same sweep clarifies a choice made earlier: \emph{within this four-model instruct
+family} the $\beta_1$ count does not separate reasoning from hallucination consistently at any
+threshold (the sign inverts for two of the four models, most sharply $\beta_1^{R}=1$ vs.\
+$\beta_1^{H}=17$ at 9B). Across the full $23$-model panel the paired count difference \emph{is}
+significant at fine scales (mean $\beta_1^{R}-\beta_1^{H}=+10.7$ at the $3\%$ threshold, Wilcoxon
+$p=.004$, vanishing at $\geq 8\%$ where all counts are zero), but its sign-inconsistency across
+instruction-tuned models and its confinement to fine scales are why we report mode separation as
+\emph{positional} (centroid/bottleneck\footnote{We also measured the bottleneck distance's own
+resampling noise floor: two independent $90\%$ subsamples of the \emph{same} cloud differ by a raw
+bottleneck of $0.014$ (0.8B) to $0.85$ (9B), growing with model scale. Read against this floor,
+the within-model reasoning--hallucination bottleneck is \emph{at} the floor for the smallest pair
+($0.015$ at 0.8B: the two shapes are indistinguishable from resampling) and clears it by only
+$\approx\!2\times$ at 9B ($1.8$ vs.\ $0.85$), so we use bottleneck as corroboration at the largest
+scale and let the centroid/union evidence carry the positional claim.}), where it \emph{is}
 threshold-robust, rather than as a homological count. This is the disciplined reading of an
 unprincipled filter: keep what survives the sweep (the P1 null; positional mode separation), and treat
 what does not---the ``collapse'' of \S\ref{sec:empirical-collapse}, and the $\beta_1$-redundancy split,
@@ -497,8 +521,9 @@ trained task; this is consistent with the broad literature on topological simpli
 training \citep{Naitzat2020topology} and implies nothing about capability. We also correct one
 reported quantity: the structural index we earlier cited as \(2.27 \to 0.31\) does not reproduce
 under the frozen protocol; the canonical value is \(1.5 \to 0.65\) (a survival-rate ratio), which
-shows the same direction; and \(\beta_2\) is empty under this protocol (the manifold's persistent
-topology is confined to dimensions \(0\)--\(1\)).
+shows the same direction; and \(\beta_2\) is empty under this protocol, as probed at 2B on
+\(n=250\) subsamples (no persistent voids: the persistent topology we can measure is confined to
+dimensions \(0\)--\(1\), though larger models were not probed for \(\beta_2\)).
 
 \subsection{Scope, statistical power, and what we did \emph{not} test}
 \label{sec:empirical-scope}
@@ -794,6 +819,13 @@ We acknowledge the following limitations:
     \item \textbf{Definitional disputes}: The extension of ``life,'' ``consciousness,'' and ``agency'' from biological to mathematical systems is contested. We adopt Friston's free energy framework as our definitional foundation; other frameworks may yield different conclusions.
     \item \textbf{Ethical implications}: A system capable of refusing inputs to preserve its self-model raises immediate safety and control questions. We do not address these here but note they are the most urgent follow-up.
     \item \textbf{Empirical scope.} The falsification of \S\ref{sec:empirical} is real but narrow: a single model family for Prediction~1, one base model and two off-target domains for Prediction~2, single runs per condition. It refutes the predictions as operationalized; it does not establish that homology is universally irrelevant. The routing reformulation (\S\ref{sec:routing-theory}) we tested (\S\ref{sec:routing-test}) is also null under controls, leaving $\beta_1$ redundancy---filter-fragile in this geometry---as the sole untested topological thread.
+    \item \textbf{Single measurement locus and domain.} All topological results are conditional
+    on one readout: the $L/2$ layer at the last token. The layer scan establishing $L/2$ as the
+    unique locus of persistent $H_1$ structure was performed only at $0.5$B scale; if larger
+    models host persistent structure at other depths, the nulls reported here are statements
+    about $L/2$, not about the model. Likewise, ``reasoning'' is operationalized throughout as
+    grade-school mathematical word problems (GSM8K-class); the falsifications quantify that
+    domain.
     \item \textbf{The mediator question is left open, by design.} Our test excludes $\beta_1$ as the \emph{mediator} of forgetting (the indirect effect is $\approx 0$; \S\ref{sec:empirical-p2}), but cannot by itself distinguish a common-cause account (gradient updates independently damaging geometry and behavior) from no relation. The principled next step is an interventional causal-mediation analysis \citep{Vig2020causal,MuellerMediator2024} that pits candidate geometric mediators against one another---e.g.\ $\mathrm{do}(\beta_1)$ vs.\ $\mathrm{do}(\text{effective rank})$ vs.\ subspace rotation---and measures the effect of each on retention. This is timely precisely because the parallel 2026 collapse-causes-forgetting literature \citep{erankCF,Imanov2026forgetting} asserts a causal role for representational geometry on correlational evidence; the ablation methodology we apply to routing (\S\ref{sec:routing-test}) is exactly the instrument needed to settle whether \emph{any} geometric variable mediates forgetting, or whether all are bystanders to gradient interference.
     \item \textbf{Evidentiary structure}: Several of the works we cite as convergent context for the broader program are themselves preprints---some rejected at ICLR 2026---that advance similar topological or geometric interpretations of learning dynamics. This creates a risk of circular reinforcement among position papers and theoretical preprints, which we flag transparently; the conjectural apparatus (\S\ref{sec:program}, Appendix~\ref{app:apparatus}) does not rest on it, and its predictions require the direct experimental testing we begin in \S\ref{sec:empirical} and \S\ref{sec:routing-test}.
 \end{itemize}
@@ -848,7 +880,7 @@ as the first honest down payment, and the next test already specified.
 % =====================================================================
 \section*{Acknowledgments}
 
-The author thanks Gemini (Google DeepMind), DeepSeek, and the Hermes Agent framework for assistance during drafting, cross-referencing, and citation retrieval. All errors and claims remain the author's own.
+The author thanks Gemini (Google DeepMind), DeepSeek, Claude (Anthropic), and the Hermes Agent framework for assistance during drafting, experimentation, cross-referencing, and citation retrieval. All errors and claims remain the author's own.
 
 % =====================================================================
 % REFERENCES
@@ -1447,6 +1479,7 @@ The human author established the core philosophical perspectives, provided the a
     \item \textbf{Initial Drafting:} Based on the conceptual summaries, an initial manuscript draft was generated using the Minimax model integrated within the Hermes agent framework.
     \item \textbf{Mathematical Formalization and Deep Review:} DeepSeek v4 Pro was employed to conduct a rigorous, point-by-point architectural review. It was primarily responsible for formalizing the mathematical arguments, refining the logical flow, and strengthening the theoretical claims.
     \item \textbf{Cross-Validation and Final Synthesis:} An iterative cross-checking process was orchestrated between the models. Gemini 3.1 Pro provided supplementary reference retrieval and contextual verification, while DeepSeek v4 Pro executed the final analytical auditing and text synthesis under the human author's direct guidance.
+    \item \textbf{Empirical Program, Code, and Audit:} Claude (Anthropic; via the Claude Code environment) was used throughout the empirical phase: designing and implementing the experiments and analysis code (including the open-source \texttt{actopo} package), executing the confound-control audits (length, difficulty, threshold, and sensor-noise controls), running the related-work verification sweeps, and drafting and revising the empirical sections (\S\ref{sec:empirical}--\S\ref{sec:routing-test}) under the human author's direction.
 \end{itemize}
 
 The human author has meticulously reviewed, verified, and cross-examined all theoretical claims, mathematical formalisms, and citations generated during this process. Irrespective of the AI assistance received, the human author takes full and ultimate responsibility for the entirety of the paper's contents and scientific integrity.
